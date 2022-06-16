@@ -1,6 +1,6 @@
-# PI Adapters for On Prem Failover
+# Adapter Failover Service
 
-PI Adapters for On Prem Failover is... tbd.
+Adapter Failover Service is... tbd.
 
 ## License
 
