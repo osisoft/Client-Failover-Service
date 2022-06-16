@@ -224,12 +224,12 @@
    <Row ss:AutoFitHeight="0" ss:Height="14.4375">
     <Cell><Data ss:Type="String">MAP</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">adapter</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">PI-Adapters-for-On-Prem-Failover</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Adapter-Failover-Service</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="14.4375">
     <Cell><Data ss:Type="String">apply-ALL</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">adapter</Data></Cell>
-    <Cell ss:StyleID="s63"><Data ss:Type="String">PI-Adapters-for-On-Prem-Failover</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Adapter-Failover-Service</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">default</Data></Cell>
