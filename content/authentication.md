@@ -7,8 +7,8 @@ Credentials provided in the basic authentication header of the request are valid
 ## Groups
 The Failover Service creates 2 local user groups when it is installed. Group membership is used to determine authorization for each request. 
 
-**PI Adapter Failover Users:** Users of the Failover Service, typically accounts running adapters
+**PIAdapterFailoverUsers:** Users of the Failover Service, typically accounts running adapters
 
-**PI Adapter Failover Administrators:** Administrators of the Failover Service
+**PIAdapterFailoverAdministrators:** Administrators of the Failover Service
 
 The group membership required for each type of request can be seen in the {link to endpoints table}.
