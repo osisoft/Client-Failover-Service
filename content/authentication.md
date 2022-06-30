@@ -5,7 +5,7 @@ The Adapter Failover Service performs basic authentication on every request and 
 Credentials provided in the basic authentication header of the request are validated. If the credentials are valid, the request is authorized based on membership of the following local groups.
 
 ## Groups
-The Failover Service creates 2 local user groups when it is installed. Group membership is used to determine authorization for each request. 
+The Failover Service creates two local user groups when it is installed. Group membership is used to determine authorization for each request. 
 
 **PIAdapterFailoverUsers:** Users of the Failover Service, typically accounts running adapters
 
