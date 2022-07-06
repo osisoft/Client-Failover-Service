@@ -13,8 +13,6 @@ The Failover Service creates two local user groups when it is installed. Group m
 
 **PIAdapterFailoverAdministrators:** Administrators of the Failover Service. This group is able to delete failover groups and sessions and POST role overrides.
 
-The group membership required for each type of request can be seen in the {link to endpoints table}.
-
 ## REST URLs
 
 | Relative URL | HTTP verb | Action | Group Required |
