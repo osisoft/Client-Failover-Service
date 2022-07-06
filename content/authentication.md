@@ -9,8 +9,8 @@ Credentials provided in the basic authentication header of the request are valid
 ## Groups
 The Failover Service creates two local user groups when it is installed. Group membership is used to determine authorization for each request. 
 
-**PIAdapterFailoverUsers:** Users of the Failover Service, typically accounts running adapters
+**PIAdapterFailoverUsers:** Users of the Failover Service, typically accounts running adapters. This group is able to configure the failover service and post heartbeat messages. The account specified in the adapter failover configuration needs to be added to this group.
 
-**PIAdapterFailoverAdministrators:** Administrators of the Failover Service
+**PIAdapterFailoverAdministrators:** Administrators of the Failover Service. This group is able to delete failover groups and sessions and POST role overrides.
 
 The group membership required for each type of request can be seen in the {link to endpoints table}.
