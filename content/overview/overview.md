@@ -4,21 +4,25 @@ uid: overview
 
 # Overview
 
-The Adapter Failover Service is an application that minimizes data loss by configuring a set of two or more adapters into a failover group. The secondary adapter takes over whenever the primary instance has lost connection to the data source or the data endpoint. Adapters are responsible for monitoring one or more components, such as a relational database or an IP address.
+The Client Failover Service is an application that minimizes data loss by enabling adapter-level failover. This Service manages multiple failover groups by  assigning primary and secondary roles to adapters in each individual failover group. 
 
-This service features a configured health endpoints that receives the failover messages that help inform the adapter of its role in the failover group as well as provides users with the ability to monitor the adapter's health.
+This Service acts as an endpoint that receives and sends failover messages to and from adapters. These messages report on the health of the adapter, help inform the adapter of its role within the failover group, and provides users with the ability to monitor the adapter's health.
 
-![Failover components](../images/failover-components.png)
+In the event that a primary adapter stops reporting its own health and status to the Client Failover Service, this Service enables the transition of an adapter in the secondary role to the primary role to ensure continuous data flow. 
 
-## Adapter installation
+The Client Failover Service supports cold, warm, and hot failover modes. 
 
-You can install the adapter with a download kit that you can obtain from the OSIsoft Customer Portal. You can install the adapter on devices running either Windows or Linux operating systems.
 
-## Adapter configuration
 
-Using REST API, you can configure all functions of the adapter. The configurations are stored in JSON files. For data ingress, you must define an adapter component in the system components configuration for each device to which the adapter will connect. You configure each adapter component with the connection information for the device and the data to collect. For data egress, you must specify destinations for the data, including security for the outgoing connection. Additional configurations are available to egress health and diagnostics data, add buffering configuration to protect against data loss, and record logging information for troubleshooting purposes.
+## Client Failover Service installation
 
-After configuring the adapter and it is sending data, you can use administration functions to manage the adapter or individual ingress components of the adapter. Health and diagnostics functions monitor the status of connected devices, adapter system functions, the number of active data streams, the rate of data ingress, the rate of errors, and the rate of data egress.
+The Client Failover Service is installed with a downloadable install kit. Please see the (Insert Link here) Installation section for additional information. 
 
-You can configure the adapter for three levels of failover: hot, warm, and cold. Your failover level is dependent on the amount of data you can afford to lose and how much of a workload your system can handle.  
+This version of the Client Failover Service only supports Windows Operating Systems. Please see the (Insert Link here) System Requirements section for more details. 
 
+
+
+## Client Failover Service configuration
+The Client Failover Service supports minimal configuration options, all of which can be configured via the Admin endpoint. 
+
+In order to add adapters to a failover group, users need to update the Failover Configuration Facet section in their adapter configuration. 
