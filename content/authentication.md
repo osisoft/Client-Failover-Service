@@ -7,9 +7,9 @@ Credentials provided in the basic authentication header of the request are valid
 ## Groups
 The Failover Service creates two local user groups when it is installed. Group membership is used to determine authorization for each request. 
 
-**AVEVAFailoverUsers:** Users of the Failover Service, typically accounts running adapters. This group is able to configure the failover service and post heartbeat messages. The account specified in the adapter failover configuration needs to be added to this group.
+**AVEVAFailoverUsers:** Users of the Failover Service, typically accounts running adapters. Members of this group are able to configure the failover service and post heartbeat messages. The account specified in the adapter failover configuration must be a member of this group.
 
-**AVEVAFailoverAdministrators:** Administrators of the Failover Service. This group is able to delete failover groups and sessions and POST role overrides.
+**AVEVAFailoverAdministrators:** Administrators of the Failover Service. Members of this group are able to delete failover groups, delete sessions, post role overrides, and get or put the global configuration.
 
 ## REST URLs
 The following REST URLs table contains examples of endpoints that you can use to manually create requests along with their corresponding required group membership.
@@ -21,3 +21,5 @@ The following REST URLs table contains examples of endpoints that you can use to
 | api/v1/clientfailover/groups/{groupID}/clientSessions | GET | Gets the client sessions in the group specified by groupID | AVEVAFailoverUsers |
 | api/v1/clientfailover/groups/{groupID}/clientSessions/{sessionID} | DELETE | Deletes the client session in groupID with sessionID | AVEVAFailoverAdministrators |
 | api/v1/clientfailover/groups/{groupID}/clientSessions/{sessionID}/roleoverride | POST | Sets the session's role to the value specified in the request body | AVEVAFailoverAdministrators |
+| api/v1/configuration | GET | Gets the global configuration | AVEVAFailoverAdministrators |
+| api/v1/configuration | PUT | Sets the global configuration | AVEVAFailoverAdministrators |
