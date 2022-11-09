@@ -2,7 +2,7 @@
 uid: UninstallTheService
 ---
 
-# Uninstall the Adapter Failover Service
+# Uninstall the Client Failover Service
 
-To uninstall the Adapter Failover Service, right-click on the Windows Installer Package (.msi) and select **Uninstall** from the menu.
+To uninstall the Client Failover Service, right-click on the Windows Installer Package (.msi) and select **Uninstall** from the menu.
 
