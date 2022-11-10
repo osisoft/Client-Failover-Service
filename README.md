@@ -1,6 +1,6 @@
-# Adapter Failover Service
+# Client Failover Service
 
-Adapter Failover Service is... tbd.
+Client Failover Service is... tbd.
 
 ## License
 
