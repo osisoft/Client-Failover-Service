@@ -1,1 +1,8 @@
 - topicUid: index
+  items: 
+  - topicUid: overview
+- topicUid: Installation
+  items:
+  - topicUid: SystemRequirements
+  - topicUid: InstallTheService
+  - topicUid: UninstallTheService
