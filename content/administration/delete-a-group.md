@@ -8,7 +8,7 @@ Groups in the Client Failover Service must be deleted individiually using one of
 
 ## cURL
 
-To delete a session using cURL:
+To delete a group using cURL:
 
 1. Open a command line.
 
@@ -22,7 +22,7 @@ To delete a session using cURL:
 
 ## Postman
 
-To delete a session using Postman:
+To delete a group using Postman:
 
 1. Select **Delete** from the HTTP request drop-down.
 
