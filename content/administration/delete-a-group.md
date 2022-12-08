@@ -2,7 +2,7 @@
 uid: DeleteAGroup
 ---
 
-# Delete a session
+# Delete a group
 
 Groups in the Client Failover Service must be deleted individiually using one of the following rest tools: cURL or Postman.
 
