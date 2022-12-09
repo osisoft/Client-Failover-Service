@@ -6,3 +6,29 @@
   - topicUid: SystemRequirements
   - topicUid: InstallTheService
   - topicUid: UninstallTheService
+- topicUid: ConfigurationFailover
+  items:
+  - topicUid: ConfigurationTools
+  - topicUid: LogLevels
+  - topicUid: HealthEndpoints
+- topicUid: AdministrationFailover
+  items:
+  - topicUid: CreateUserFailover
+  - topicUid: AddAdminGroup
+  - topicUid: DeleteASession
+  - topicUid: DeleteAGroup
+  - topicUid: PerformARoleOverride
+  - topicUid: CancelaRoleOverride
+- topicUid: HealthAndDiagnosticsFailover
+  items:
+  - topicUid: AdapterHealthFailover
+    items:
+    - topicUid: DeviceStatusFailover
+    - topicUid: NextHealthMessageExpectedFailover
+  - topicUid: AdapterDiagnosticsFailover
+    items:
+    - topicUid: SystemFailover
+    - topicUid: StreamCountFailover
+    - topicUid: IORateFailover
+    - topicUid: ErrorRateFailover
+    - topicUid: EgressDiagnostics
