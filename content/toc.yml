@@ -4,6 +4,7 @@
 - topicUid: Installation
   items:
   - topicUid: SystemRequirements
+  - topicUid: AuthenticationFailover
   - topicUid: InstallTheService
   - topicUid: UninstallTheService
 - topicUid: ConfigurationFailover
