@@ -1,3 +1,7 @@
+---
+uid: AuthenticationFailover
+---
+
 # Authentication
 The Client Failover Service performs basic authentication on every request and verifies that the account is a member of the required group or groups to be able to complete the request.
 
