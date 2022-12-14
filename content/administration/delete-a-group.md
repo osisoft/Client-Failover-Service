@@ -31,7 +31,7 @@ To delete a group using Postman:
    **Note:** To delete a group, there cannot be any active open sessions within the group. 
 
    ```bash
-      "http://<endpointport>/api/v1/clientfailover/groups/<groupID>"
+      http://<endpointport>/api/v1/clientfailover/groups/<groupID>
       ```
 
 3. Select **Send** to delete the group. 
