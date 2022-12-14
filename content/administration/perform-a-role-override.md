@@ -28,7 +28,7 @@ To perform a role override using Postman:
 2. Using the following link, define the endpoint port, group ID and session ID for the session you want to make primary:
 
    ```bash
-      "https://<endpointport>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride"
+      https://<endpointport>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride
       ```
 
 3. In the body of the request, enter the Value as **primary**.
