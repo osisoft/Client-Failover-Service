@@ -4,7 +4,7 @@ uid: PerformARoleOverride
 
 # Perform a role override
 
-Administrators can force a secondary session to be the primary session by performing a role override using the POST method using one of the following rest tools: cURL or Postman. The secondary session can be set as primary for a defined amount of time or can be set as the primary indefinitely.
+Administrators can force a secondary session to be the primary session by performing a role override using the POST method using one of the following REST tools: cURL or Postman. The secondary session can be set as primary for a defined amount of time or can be set as the primary indefinitely.
 
 **Note:** If a heartbeat is not received during a period longer than the Failover Timeout and the session becomes stale, the primary session will remain.
 
