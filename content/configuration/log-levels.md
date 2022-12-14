@@ -4,7 +4,7 @@ uid: LogLevels
 
 # Log Levels
 
-The Client Failover Service writes log messages to flat text files that can be accessed using the Windows Event Viewer. To view the logs, open the Event Viewer and select **Windows Log | Application** and locate the event source (Client Failover Service) in the Event Viewer. 
+The Client Failover Service writes log messages to the Application log. To view these messages, open the Windows Event Viewer, select **Windows Logs | Application**, and look for events with a Source of "Client Failover Service". 
 
 ## Logging Parameters
 
