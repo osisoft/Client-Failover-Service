@@ -27,7 +27,7 @@ To delete a session using Postman:
 2. Using the following link, define the endpoint port, group ID and session ID for the session you want to delete:
 
    ```bash
-      "http://<endpointport>/api/v1/clientfailover/groups/<groupID>/clientsessions/<sessionID>"
+      http://<endpointport>/api/v1/clientfailover/groups/<groupID>/clientsessions/<sessionID>
       ```
 
 3. Select **Send** to delete the session. 
