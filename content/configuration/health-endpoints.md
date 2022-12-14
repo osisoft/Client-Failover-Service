@@ -79,7 +79,7 @@ The following parameters are available for configuring health endpoints:
 }
 ```
 
-**Note:** The property pairs username / password and clientID / clientSecret are mutually exclusive for basic auth and authentication with ADH respectively. If neither of these property pairs are specified, Kerberos / NTLM is used instead.
+**Note:** The property pair Username/Password is only for basic authentication with PI Web API.  The pair ClientId/ClientSecret is only for authentication with ADH. For PI Web API, if Username/Password are omitted, then Kerberos/NTLM is used instead.
 
 ## REST URLs
 
