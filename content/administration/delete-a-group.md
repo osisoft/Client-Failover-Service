@@ -4,7 +4,7 @@ uid: DeleteAGroup
 
 # Delete a group
 
-Groups in the Client Failover Service must be deleted individually using one of the following rest tools: cURL or Postman.
+Groups in the Client Failover Service must be deleted individually using one of the following REST tools: cURL or Postman.
 
 ## cURL
 
