@@ -4,7 +4,7 @@ uid: DeleteASession
 
 # Delete a session
 
-Sessions in the Client Failover Service must be deleted individually using one of the following rest tools: cURL or Postman.
+Sessions in the Client Failover Service must be deleted individually using one of the following REST tools: cURL or Postman.
 
 ## cURL
 
