@@ -6,9 +6,21 @@ uid: CancelaRoleOverride
 
 An administrator can cancel a role override at any time by using the OFF option. This allows the session’s role to be automatically calculated by the failover engine.
 
+## cURL
+
+To cancel an override using cURL:
+
+1. Open a command line.
+
+2. Run a `POST` command, defining the endpoint port, group ID and session ID:
+
+   ```bash
+      curl -d '{"Value":"Primary"}' - request POST "http://<endpointport>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride"
+      ```
+
 ## Postman
 
-To cancel an override in Postman:
+To cancel an override using Postman:
 
 1. Select **POST** from the HTTP request drop-down.
 
