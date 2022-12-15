@@ -57,12 +57,12 @@ The following parameters are available for configuring health endpoints:
 
 ## Examples
 
-### ADH endpoint
+### AVEVA Data Hub endpoint
 
 ```code
 {
-    "Id": "ADH",
-    "Endpoint": "https://<ADH OMF endpoint>",
+    "Id": "AVEVA Data Hub",
+    "Endpoint": "https://<AVEVA Data Hub OMF endpoint>",
     "ClientId": "<clientid>",
     "ClientSecret": "<clientsecret>"
 }
