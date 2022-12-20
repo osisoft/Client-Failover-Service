@@ -79,7 +79,7 @@ The following parameters are available for configuring health endpoints:
 }
 ```
 
-**Note:** The property pair Username/Password is only for basic authentication with PI Web API.  The pair ClientId/ClientSecret is only for authentication with ADH. For PI Web API, if Username/Password are omitted, then Kerberos/NTLM is used instead.
+**Note:** The property pair Username/Password is only for basic authentication with PI Web API.  The pair ClientId/ClientSecret is only for authentication with AVEVA Data Hub. For PI Web API, if Username/Password are omitted, then Kerberos/NTLM is used instead.
 
 ## REST URLs
 
