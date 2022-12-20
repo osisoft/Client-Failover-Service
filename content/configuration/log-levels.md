@@ -18,7 +18,7 @@ The following parameter is available to configure logging:
 
 | Parameter                 | Description                                                  |
 | ------------------------- | ------------------------------------------------------------ |
-| Vebose                    | Logs that contain the most detailed messages. These messages may contain sensitive application data like actual received values. <br><br> **Note:** These messages should not be enabled in production environment. |
+| Verbose                    | Logs that contain the most detailed messages. These messages may contain sensitive application data like actual received values. <br><br> **Note:** These messages should not be enabled in production environment. |
 | Debug                     | Logs that can be used to troubleshoot data flow issues by recording metrics and detailed flow related information. |
 | Information               | Logs that track the general flow of the application. Any non-repetitive general information like the following can be useful for diagnosing potential application errors: <br><br> - Version information related to the software at startup <br> - External services used <br> - Data source connection string <br> - Number of measurements <br> - Egress URL <br> - Change of state “Starting” or “Stopping” <br> - Configuration |
 | Warning                   | Logs that highlight an abnormal or unexpected event in the application flow that does not otherwise cause the application execution to stop. Warning messages can indicate an unconfigured data source state, an insecure communication channel in use, or any other event that could require attention but that does not impact data flow. |
