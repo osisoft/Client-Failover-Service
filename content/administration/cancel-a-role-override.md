@@ -30,7 +30,13 @@ To cancel an override using Postman:
       https://<endpointport>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride
       ```
 
-3. In the body of the request, enter the Value as **OFF**
+3. In the body of the request, enter the Value as **OFF**.
+
+   ```bash
+   {
+      "Value": "Off"
+   }
+      ```
 
 4. Select **Send** to cancel the role override. 
 
