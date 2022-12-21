@@ -15,7 +15,7 @@ To cancel an override using cURL:
 2. Run a `POST` command, defining the endpoint port, group ID and session ID:
 
    ```bash
-      curl -d '{"Value":"Primary"}' - request POST "http://<endpointport>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride"
+      curl -d '{"Value":"Primary"}' - request POST "https://<endpointport>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride"
       ```
 
 ## Postman
@@ -27,7 +27,7 @@ To cancel an override using Postman:
 2. Using the following link, define the endpoint port, group ID and session ID for the session you want to cancel:
 
    ```bash
-      http://<endpointport>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride
+      https://<endpointport>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride
       ```
 
 3. In the body of the request, enter the Value as **OFF**
