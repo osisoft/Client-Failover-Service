@@ -17,7 +17,7 @@ To perform a role override using cURL:
 2. Run a `POST` command, defining the endpoint port, group ID and session ID for the session you want to make primary:
 
    ```bash
-      curl --request POST -d "https://<endpointport>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride"
+      curl --request POST -d "https://<host>:<port>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride"
       ```
 ## Postman
 
@@ -28,7 +28,7 @@ To perform a role override using Postman:
 2. Using the following link, define the endpoint port, group ID and session ID for the session you want to make primary:
 
    ```bash
-      https://<endpointport>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride
+      https://<host>:<port>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride
       ```
 
 3. In the body of the request, enter the Value as **primary**.
