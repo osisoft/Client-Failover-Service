@@ -51,7 +51,7 @@ To change a log session using Postman:
 2. Using the following link, define the host and the port number:
 
    ```bash
-      "http://<host>:<port>/api/v1/configuration/logging>"
+      "https://<host>:<port>/api/v1/configuration/logging>"
       ```
 
 3. In the body of the request, enter the new logging level.
