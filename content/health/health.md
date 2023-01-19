@@ -4,9 +4,9 @@ uid: AdapterHealthFailover
 
 # Health
 
-PI Adapters produce various kinds of health data that can be egressed to different health endpoints.
+Client Failover Service produces various kinds of health data that can be egressed to different health endpoints.
 
-To egress health related data, you have to configure an adapter health endpoint first. See [Health endpoint configuration](xref:HealthEndpointConfiguration).
+To egress health related data, you have to configure a health endpoint first. See [Health endpoint configuration](xref:HealthEndpointConfiguration).
 
 ## Available health data
 
