@@ -1,6 +1,4 @@
-- topicUid: index
-  items: 
-  - topicUid: overview
+- topicUid: overview
 - topicUid: Installation
   items:
   - topicUid: SystemRequirements
