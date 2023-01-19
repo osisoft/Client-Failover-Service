@@ -21,3 +21,12 @@
   - topicUid: DeleteAGroup
   - topicUid: PerformARoleOverride
   - topicUid: CancelaRoleOverride
+- topicUid: HealthAndDiagnosticsFailover
+  items:
+  - topicUid: AdapterHealthFailover
+    items:
+    - topicUid: DeviceStatusFailover
+    - topicUid: NextHealthMessageExpectedFailover
+  - topicUid: FailoverDiagnostics
+    items:
+    - topicUid: SystemFailover
