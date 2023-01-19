@@ -24,4 +24,3 @@ This diagnostic stream contains system level information related to the host pla
 | **StorageTotalSize**         | `double` | Total size of the storage medium in use by the system<br/>Unit of Measure = megabytes |
 | **StorageFreeSpace**         | `double` | Free space available<br/>Unit of Measure = megabytes                              |
 
-Each adapter component produces its own diagnostics streams.
