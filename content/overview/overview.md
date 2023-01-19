@@ -13,16 +13,15 @@ In the event that a primary adapter stops reporting its own health and status to
 The Client Failover Service supports cold, warm, and hot failover modes. 
 
 
-
 ## Client Failover Service installation
 
-The Client Failover Service is installed with a downloadable install kit. Please see the (Insert Link here) Installation section for additional information. 
+The Client Failover Service is installed with a downloadable install kit. Please see the [Installation section](xref:Installation) for additional information. 
 
-This version of the Client Failover Service only supports Windows Operating Systems. Please see the (Insert Link here) System Requirements section for more details. 
-
+This version of the Client Failover Service only supports Windows Operating Systems. Please see the [System Requirements](xref:SystemRequirements) section for more details. 
 
 
 ## Client Failover Service configuration
+
 The Client Failover Service supports minimal configuration options, all of which can be configured via the Admin endpoint. 
 
 In order to add adapters to a failover group, users need to update the Failover Configuration Facet section in their adapter configuration. 
