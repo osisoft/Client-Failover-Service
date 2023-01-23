@@ -20,15 +20,23 @@ The certificate that the Client Failover Service generates is applicable to most
 
 To replace the SSL Certificate, an administrator must:
 
-1. Delete the existing public certificate (with the CRT extension) from the Certificates folder.
+1. Delete the existing self-signed public certificate (with the CRT extension) from the Certificates folder.
 
-2. Convert the CA-issued certificate to a public file with a CRT extension and the certificate's private key to a file with a KEY extension. <br><br> **Note:** The CRT and KEY files must be in PEM format and share a common file name (e.g., MyCertificate.crt and MyCertificate.key).  The KEY file must not be password-protected.
+2. Convert the CA-issued certificate to a public file with a CRT extension and the certificate's private key to a file with a KEY extension. <br><br> **Note:** The CRT and KEY files must be in PEM format and share a common file name (e.g., MyCertificate.crt and MyCertificate.key).  The KEY file must **not** be password-protected.
 
 3. Stop the service. 
 
-4. Place the CRT file into the Certificates folder and the KEY file into the Keys subdirectory. 
+4. Place the CRT file into the Certificates folder and the KEY file into the Keys subdirectory.
 
-5. Restart the failover service. 
+5. For each of the above two files, perform the following additional steps to ensure that the service has the correct access to the certificate files:
+   * Select the file in Windows Explorer
+   * Right-click on the file name and select "Properties"
+   * Click the "Security" tab
+   * Click the "Edit" button
+   * In the "Group or user names" list, select the user under which the Client Failover Service is running; this is normally "AVEVAFailover" but it may have been changed to another domain or user account
+   * In the "Permissions" list, click "Allow" for "Full control"
+
+6. Restart the failover service. 
 
 If the service does not start properly, check the message log for additional information. 
 
