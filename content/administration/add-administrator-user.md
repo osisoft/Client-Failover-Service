@@ -4,7 +4,7 @@ uid: AddAdminGroup
 
 # Add an administrator user
 
-In the Client Failover Service, administrators can change logging levels, delete groups, delete sessions, set up OMF Health Endpoints and perform role overrides.
+In the Client Failover Service, administrators can change logging levels, delete groups, set up OMF Health Endpoints, and perform role overrides.
 
 To provide administrator privileges to a user:
 
