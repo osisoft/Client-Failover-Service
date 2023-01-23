@@ -18,7 +18,7 @@ With a health endpoint configured to a PI server, you can use PI System Explorer
 
 ![Health&Diagnostics](../images/elements-root.png)
 
-- Select **Client Failover Services** to view all ClientFailoverService nodes. Each node's title is defined by the node's corresponding computer name and service name in the following format: {ComputerName}.ClientFailoverService. For example, in the following image, the computer name is “USOAKL10657”. .
+- Select **Client Failover Services** to view all ClientFailoverService nodes. Each node's title is defined by the node's corresponding computer name and service name in the following format: `{ComputerName}.ClientFailoverService`. For example, in the following image, the computer name is “USOAKL10657”.
   
 - To view diagnostics values, select a ClientFailoverService node and then select **Attributes**.
 
