@@ -34,19 +34,13 @@ Complete the following steps to configure health endpoints. Use the `PUT` method
     
  **Note:** For a list of other REST operations you can perform, like updating or replacing a health endpoints configuration, see [REST URLs](#rest-urls).
 
-## Health endpoints schema
-
-The full schema definition for the health endpoint configuration is in the `System_HealthEndpoints_schema.json` file located in the following folder:
-
-`%ProgramFiles%\AVEVA\Adapters\<AdapterName>\Schemas`
-
 ## Health endpoint parameters
 
 The following parameters are available for configuring health endpoints:
 
 | Parameter                       | Required                            | Type      | Description                                        |
 |---------------------------------|-------------------------------------|-----------|----------------------------------------------------|
-| Id                        | Optional                            | `string`    | Uniquely identifies the endpoint. This can be any alphanumeric string. If left blank, a unique value is generated automatically. <br><br>Allowed value: any string identifier<br>Default value: new GUID|
+| Id                        | Optional for POST, required for PUT                            | `string`    | Uniquely identifies the endpoint. This can be any alphanumeric string. If left blank, a unique value is generated automatically. <br><br>Allowed value: any string identifier<br>Default value: new GUID|
 | Endpoint                    | Required                            | `string`    | The URL of the OMF endpoint to receive this health data. <br><br>Allowed value: well-formed http or https endpoint string<br>Default: `null`|
 | Username                    | Required for PI Web API endpoints   | `string`    | The username used to authenticate with a PI Web API OMF endpoint. <br><br>_PI server:_<br>Allowed value: any string<br>Default: `null`|
 | Password                    | Required for PI Web API endpoints   | `string`    | The password used to authenticate with a PI Web API OMF endpoint. <br><br>_PI server:_<br>Allowed value: any string<br>Default: `null`|
@@ -85,15 +79,13 @@ The following parameters are available for configuring health endpoints:
 
 | Relative URL                                              | HTTP verb | Action               |
 |-----------------------------------------------------------|-----------|----------------------|
-| api/v1/configuration/system/healthEndpoints      | GET       | Gets all configured health endpoints |
-| api/v1/configuration/system/healthEndpoints      | DELETE    | Deletes all configured health endpoints |
-| api/v1/configuration/system/healthEndpoints      | POST      | Adds an array of health endpoints or a single endpoint. Fails if any endpoint already exists |
-| api/v1/configuration/system/healthEndpoints      | PUT       | Replaces all health endpoints. **Note:** Requires an array of endpoints |
-| api/v1/configuration/system/healthEndpoints     | PATCH     | Allows partial updating of configured health endpoints<br>**Note:** The request must be an array containing one or more health endpoints. Each health endpoint in the array must include its *Id*.  |
-| api/v1/configuration/system/healthEndpoints/*Id* | GET       | Gets configured health endpoint by *Id* |
-| api/v1/configuration/system/healthEndpoints/*Id*| DELETE     | Deletes configured health endpoint by *Id* |
-| api/v1/configuration/system/healthEndpoints/*Id* | PUT       | Updates or creates a new health endpoint with the specified *Id* |
-| api/v1/configuration/system/healthEndpoints/*Id* | PATCH     | Allows partial updating of configured health endpoint by *Id* |
+| api/v1/configuration/healthEndpoints      | GET       | Gets all configured health endpoints |
+| api/v1/configuration/healthEndpoints      | DELETE    | Deletes all configured health endpoints |
+| api/v1/configuration/healthEndpoints      | POST      | Adds an array of health endpoints or a single endpoint. Fails if any endpoint already exists |
+| api/v1/configuration/healthEndpoints      | PUT       | Replaces all health endpoints. **Note:** Requires an array of endpoints |
+| api/v1/configuration/healthEndpoints/*Id* | GET       | Gets configured health endpoint by *Id* |
+| api/v1/configuration/healthEndpoints/*Id*| DELETE     | Deletes configured health endpoint by *Id* |
+| api/v1/configuration/healthEndpoints/*Id* | PUT       | Updates or creates a new health endpoint with the specified *Id* |
 
 **Note:** Replace *Id* with the ID of the health endpoint.
 
