@@ -6,7 +6,9 @@ uid: CertificateMgmtFailover
 
 To enable HTTPs for REST API endpoints, the server requires an SSL certificate. Certificates identify client applications and machines on servers and allow for building a secure communication link. The Client Failover Service generates a self-signed certificate with a 15-year expiration date during installation. Instead of being in the machine’s certificate store, the certificate can be found in a data folder ((%PROGRAMDATA%/AVEVA/Client Failover Service/Certificates) on your machine.
 
-The certificates folder contains a public CRT certificate file and a private KEY file. It allows read access for all users of the machine and the virtual service account (NT SERVICE\AVEVAFailover). The private KEY file can be found in a subdirectory named Keys. This folder is only accessible by machine administrators and the virtual service account.
+The Certificates folder contains a public CRT certificate file and a private KEY file. It allows read access for all users of the machine and the virtual service account (NT SERVICE\AVEVAFailover). The private KEY file can be found in a subdirectory named Keys. This folder is only accessible by machine administrators and the virtual service account.
+
+The Certificates folder also contains a folder named Archive.  This folder is normally empty, but it may contain copies of certificate and/or key files that are detected as invalid when the service starts.  These may be useful when troubleshooting any problems with certificates.
 
 **Note:** The certificate used by Client Failover Service must be trusted by the device running the adapter. If it is not trusted, the [ValidateEndpointCertificate](configuration/health-endpoints.md) must be set to false. 
 
@@ -20,7 +22,7 @@ To replace the SSL Certificate, an administrator must:
 
 1. Delete the existing public certificate (with the CRT extension) from the Certificates folder.
 
-2. Convert the CA-issued certificate to a public with a CRT extension and the certificate's private key to a file with a KEY extension. <br><br> **Note:** The CRT and KEY files must be in PEM format and share a common file name (e.g., MyCertificate.crt and MyCertificate.key). 
+2. Convert the CA-issued certificate to a public file with a CRT extension and the certificate's private key to a file with a KEY extension. <br><br> **Note:** The CRT and KEY files must be in PEM format and share a common file name (e.g., MyCertificate.crt and MyCertificate.key).  The KEY file must not be password-protected.
 
 3. Stop the service. 
 
