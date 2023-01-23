@@ -1,6 +1,8 @@
 # Client Failover Service
 
-Client Failover Service is... tbd.
+The Client Failover Service is an application that minimizes data loss by enabling adapter-level failover. This Service manages multiple failover groups by assigning primary and secondary roles to adapters in each individual failover group.
+
+This repository contains the documentation for the Client Failover Service. You can access a readable version of this documentation here (add link when published).
 
 ## License
 
