@@ -2,7 +2,7 @@
 uid: CreateUserFailover
 ---
 
-# Create a User
+# Create a user
 
 To create a local user:
 
