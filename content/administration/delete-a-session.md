@@ -15,8 +15,8 @@ To delete a session using cURL:
 2. Run a `DELETE` command, defining the endpoint port, group ID and session ID to delete:
 
    ```bash
-      curl --request DELETE "https://<host>:<port>/api/v1/clientfailover/groups/<groupID>/clientsessions/<sessionID>"
-      ```
+   curl --request DELETE "https://<host>:<port>/api/v1/clientfailover/groups/<groupID>/clientsessions/<sessionID>"
+   ```
 
 ## Postman
 
@@ -27,7 +27,7 @@ To delete a session using Postman:
 2. Using the following link, define the endpoint port, group ID and session ID for the session you want to delete:
 
    ```bash
-      https://<host>:<port>/api/v1/clientfailover/groups/<groupID>/clientsessions/<sessionID>
-      ```
+   https://<host>:<port>/api/v1/clientfailover/groups/<groupID>/clientsessions/<sessionID>
+   ```
 
 3. Select **Send** to delete the session. 
