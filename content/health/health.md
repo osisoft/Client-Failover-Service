@@ -1,5 +1,5 @@
 ---
-uid: AdapterHealthFailover
+uid: ClientFailoverHealth
 ---
 
 # Health
