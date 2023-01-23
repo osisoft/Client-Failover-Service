@@ -4,7 +4,7 @@ uid: HealthAndDiagnosticsFailover
 
 # Health and Diagnostics
 
-Client Failover Service produces various types of health data. You can use health data to ensure that your Client Failover Service is running properly and that data flows to the configured OMF endpoint. For more information on available Client Failover Service health data, see [health](xref:AdapterHealth).
+Client Failover Service produces various types of health data. You can use health data to ensure that your Client Failover Service is running properly and that data flows to the configured OMF endpoint. For more information on available Client Failover Service health data, see [health](xref:ClientFailoverHealth).
 
 Client Failover Service also produces diagnostic data. You can use diagnostic data to find more information about a particular Client Failover Service instance. Diagnostic data lives alongside the health data. 
 
