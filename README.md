@@ -6,7 +6,7 @@ This repository contains the documentation for the Client Failover Service. You 
 
 ## License
 
-<a href="https://www.osisoft.com/copyright/">&copy; 2020 - 2022 OSIsoft, LLC. All rights reserved.</a>
+<a href="https://www.osisoft.com/copyright/">&copy; 2020 - 2023 OSIsoft, LLC. All rights reserved.</a>
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
