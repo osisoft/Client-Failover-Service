@@ -2,11 +2,11 @@
 uid: LogLevels
 ---
 
-# Log Levels
+# Log levels
 
-The Client Failover Service writes log messages to the Application log. To view these messages, open the Windows Event Viewer, select **Windows Logs | Application**, and look for events with a Source of "Client Failover Service". 
+The Client Failover Service writes log messages to the application log. To view these messages, open the Windows Event Viewer, select **Windows Logs | Application**, and look for events with a source of "Client Failover Service". 
 
-## Logging Parameters
+## Logging parameters
 
 The following parameter is available to configure logging:
 
@@ -14,7 +14,7 @@ The following parameter is available to configure logging:
 | ------------------------- | --------- | ------------------------------------------------------------ |
 | Logging                   | string    | The current logging level of the service. This parameter sets the severity level for the messages that are included in the log. <br><br> The default for this parameter is **Information**. <br><br> Additional levels include (in low to high severity order): *Verbose, Debug, Information, Warning, Error, Fatal* <br><br> For additional information on logging levels, see the table below. <br><br> When a level is defined, you will receive the level set as well as all severity levels above your defined level. For example, if you set the level to **Warning**, you will also receive **Error** and **Fatal** messages in logs as well. <br><br> If you do not wish to log any messages, you can set the parameter level to **None**. |
 
-### Logging Levels Defined
+### Logging levels defined
 
 | Parameter                 | Description                                                  |
 | ------------------------- | ------------------------------------------------------------ |
@@ -26,7 +26,7 @@ The following parameter is available to configure logging:
 | Fatal                     | Logs that describe an unrecoverable application or system crash or a catastrophic failure that requires immediate attention. This can indicate application wide failures like beta timeout expired, unable to start self-hosted endpoint, or unable to access vital resource (for example, Data Protection key file. |
 | None                      | Logging is disabled for the given component. |
 
-## Change Log Levels
+## Change log levels
 
 Administrators can change the log level using cURL or Postman.
 

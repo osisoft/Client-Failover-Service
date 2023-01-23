@@ -12,7 +12,7 @@ The certificates folder contains a public CRT certificate file and a private KEY
 
 If the SSL certificate is set to expire within 30 days, the message log receives a warning message. If the SSL certificate has expired, the service logs an error message to the log, but continues to use the certificate.
 
-## Replacing the SSL Certificate
+## Replacing the SSL certificate
 
 The certificate that the Client Failover Service generates is applicable to most scenarios. However, you may prefer to replace the default self-signed certificate with one issued by a certificate authority.
 
