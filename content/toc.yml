@@ -28,3 +28,4 @@
   - topicUid: FailoverDiagnostics
     items:
     - topicUid: SystemFailover
+- topicUid: Troubleshooting
