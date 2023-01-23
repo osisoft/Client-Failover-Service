@@ -12,7 +12,7 @@ The following parameter is available to configure logging:
 
 | Parameter                 |  Type     | Description                                                  |
 | ------------------------- | --------- | ------------------------------------------------------------ |
-| Logging                   | string    | The current logging level of the service. This parameter sets the severity level for the messages that are included in the log. <br><br> The default for this parameter is **Information**. <br><br> Additional levels include (in low to high severity order): *Verbose, Debug, Information, Warning, Error, Fatal* <br><br> For additional information on logging levels, see the table below. <br><br> When a level is defined, you will receive the level set as well as all severity levels above your defined level. For example, if you set the level to **Warning**, you will also receive **Error** and **Fatal** messages in logs as well.|
+| LogLevel                   | string    | The current logging level of the service. This parameter sets the severity level for the messages that are included in the log. <br><br> The default for this parameter is **Information**. <br><br> Additional levels include (in low to high severity order): *Verbose, Debug, Information, Warning, Error, Fatal* <br><br> For additional information on logging levels, see the table below. <br><br> When a level is defined, you will receive the level set as well as all severity levels above your defined level. For example, if you set the level to **Warning**, you will also receive **Error** and **Fatal** messages in logs as well.|
 
 ### Logging Levels Defined
 
@@ -27,7 +27,12 @@ The following parameter is available to configure logging:
 
 ## Change Log Levels
 
-Administrators can change the log level using cURL or Postman.
+Administrators can change the log level using cURL or Postman.  An example request body setting the level to "Verbose" is as follows:
+```bash
+{
+    "LogLevel": "Verbose"
+}
+```
 
 ### cURL
 
@@ -37,10 +42,10 @@ To change a log session using cURL:
 
 2. Run a `PUT` command, defining the host and the port number:
 
-   ```bash
-      curl --request PUT -d "https://<host>:<port>/api/v1/configuration/logging"
-      ```
-
+```bash
+curl -H 'Content-Type: application/json' -X PUT -d '{ "LogLevel": "Verbose" }' "https://<host>:<port>/api/v1/configuration/logging"
+```
+     
 ### Postman
 
 To change a log session using Postman:
@@ -49,10 +54,10 @@ To change a log session using Postman:
 
 2. Using the following link, define the host and the port number:
 
-   ```bash
-      "https://<host>:<port>/api/v1/configuration/logging>"
-      ```
+```bash
+https://<host>:<port>/api/v1/configuration/logging
+```
 
-3. In the body of the request, enter the new logging level.
+3. In the body of the request, enter the example request body above and change the logging level as desired.
 
 4. Select **SEND** to change the log level. 
