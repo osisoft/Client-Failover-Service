@@ -4,9 +4,9 @@ uid: HealthAndDiagnosticsFailover
 
 # Health and Diagnostics
 
-Client Failover Service produces various types of health data. You can use health data to ensure that your Client Failover Service is running properly and that data flows to the configured OMF endpoint. For more information on available Client Failover Service health data, see [health](xref:ClientFailoverHealth).
+The Client Failover Service produces various types of health data. You can use health data to ensure that your Client Failover Service is running properly. For more information on available Client Failover Service health data, see [health](xref:ClientFailoverHealth).
 
-Client Failover Service also produces diagnostic data. You can use diagnostic data to find more information about a particular Client Failover Service instance. Diagnostic data lives alongside the health data. 
+The Client Failover Service also produces diagnostic data which lives alongside the health data. You can use diagnostic data to find more information about a particular Client Failover Service instance. 
 
 PI Web API is the currently supported OMF endpoint for Client Failover Service health data. PI Web API parses the information and sends it to configured PI servers for the OMF endpoint. The static data is used to create an AF structure on a PI AF server. The dynamic health data is time-series data that is stored in PI points on a PI Data Archive. You can see it in the AF structure as PI point data reference attributes.
 
