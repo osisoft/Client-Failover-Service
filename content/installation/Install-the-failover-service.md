@@ -16,9 +16,9 @@ To install:
 
 4. Click **Next**. 
 
-5. In the "Ready to install Client Failover Service" window, click **Install** to begin the installation. To modify the location or port number, select **Back** to return to the Configuration page. 
+5. In the "Ready to install Client Failover Service" page, click **Install** to begin the installation. To modify the location or port number, select **Back** to return to the Configuration page. 
 
-6. After installation is completed, the wizard will navigate to the "Add Users" window. Two Windows local groups have been created automatically if they didn't already exist: AVEVAFailoverUsers and AVEVAFailoverAdministrators. Click **Add Users** to add users to these groups manually, or configure at a later time. Users in the AVEVAFailoverUsers group are typically adapter user accounts, which have permissions to configure failover groups and sessions. Users in the AVEVAFailoverAdministrators group have admin privileges to delete group, post failover role override, and perform global configuration including logging and health endpoints.
+6. After installation is completed, the wizard will navigate to the "Add Users" page. Click **Add Users** to add users to the local groups created by the installer, or configure at a later time. Refer to [Groups](https://github.com/osisoft/Client-Failover-Service/blob/pbi/381223-installation/content/installation/authentication.md#groups) for details.
    >Note: The "Local Users and Groups" window will not launch on Windows Server Core operating systems.
 
 7. Click **Next**.
