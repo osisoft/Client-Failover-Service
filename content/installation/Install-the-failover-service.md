@@ -16,6 +16,9 @@ To install:
 
 4. Click **Next**. 
 
-5. If the installation location and port number are correct, select **Install** to begin the installation. To modify the location or port number, select **Back** to return to the Configuration page. 
+5. In the "Ready to install Client Failover Service" window, click **Install** to begin the installation. To modify the location or port number, select **Back** to return to the Configuration page. 
 
-6. When installation is complete, select **Finish** to close the setup wizard. 
+6. After installation is completed, an "Add Users" window will appear. The installer has created two groups: AVEVAFailoverUsers and AVEVAFailoverAdministrators. Users in the AVEVAFailoverUsers group are typically adapter user accounts, which have the permission to configure failover group and session operations. Users in the AVEVAFailoverAdministrators group have admin permissions to delete groups, post failover role override, and perform global configuration including logging and health endpoints. Click **Add Users** to add users to these groups manually, or configure at a later time.
+Note: The "Local Users and Groups" window will not launch on Windows Server Core.
+
+7. When installation is complete, select **Finish** to close the setup wizard. 
