@@ -10,23 +10,22 @@ The Client Failover Service provides features for troubleshooting issues related
 
 ## Logs
 
-Messages from the System and OmfEgress logs provide information on the status of the adapter. For example, they show if a connection from the adapter to an egress endpoint exists.
+Client Failover Service logs messages in event viewer. Messages from the Client Failover Service logs provide information on the status of the service, groups, sessions, adapters in the client failover service.
 
-Perform the following steps to view the System and OmfEgress logs:
+Perform the following steps to view the Client Failover Service logs:
 
-1. Navigate to the logs directory:<br>
-   Windows: `%ProgramData%\OSIsoft\Adapters\<AdapterName>\Logs`<br>
-    
-   **Example:**<br> A successful connection to a PI Web API egress endpoint displays the following message in the OmfEgress log:
+1. Navigate to the Event Viewer: <br> 
+   Event Viewer > Windows Logs > Application
+   Source for the logs is 'Client Failover Service'.
+   
+   **Example:**<br> A successful message when client gets promoted from Secondary to Primary in the event viewer log:
 
     ```json
-    2020-11-02 11:08:51.870 -06:00 [Information] Data will be sent to the following OMF endpoint: 
-    Id: <omfegress id>
-    Endpoint: <pi web api URL>   (note: the pi web api default port is 443)
-    ValidateEndpointCertificate: <true or false>
+    [11:12:18:075 INF 0HMMN3GUU0D8T:0000000F] Client 'f9d86db5-65c5-462b-8519-8d332dbcaf66' promoted to Primary. 
+    Reason: Only one client in group.
     ```
 
-2. Optional: Change the log level of the adapter to receive more information and context. 
+2. Optional: Change the log level of the Client Failover Service to receive more information and context. 
 
 ### ASP .NET Core platform log
 
