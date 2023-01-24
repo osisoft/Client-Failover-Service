@@ -4,7 +4,7 @@ uid: DeviceStatusFailover
 
 # Device status
 
-The device status indicates the health of this service and whether it is running properly. This time-series data is stored within a PI point or AVEVA Data Hub stream, depending on the endpoint type. During healthy steady-state operation, a value of `Good` is expected.
+The device status indicates the health of this Client Failover Service and whether it is running properly. This time-series data is stored within a PI point or AVEVA Data Hub stream, depending on the endpoint type. During healthy steady-state operation, a value of `Good` is expected.
 
 | Property                        | Type                                 | Description                     |
 |---------------------------------|--------------------------------------|---------------------------------|
