@@ -21,4 +21,6 @@ To install:
 6. After installation is completed, an "Add Users" window will appear. The installer has created two groups: AVEVAFailoverUsers and AVEVAFailoverAdministrators. Users in the AVEVAFailoverUsers group are typically adapter user accounts, which have the permission to configure failover group and session operations. Users in the AVEVAFailoverAdministrators group have admin permissions to delete groups, post failover role override, and perform global configuration including logging and health endpoints. Click **Add Users** to add users to these groups manually, or configure at a later time.
 Note: The "Local Users and Groups" window will not launch on Windows Server Core.
 
-7. When installation is complete, select **Finish** to close the setup wizard. 
+7. Click **Next**.
+
+9. Click **Finish** to close the setup wizard. 
