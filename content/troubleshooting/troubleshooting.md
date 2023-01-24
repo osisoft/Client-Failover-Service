@@ -33,3 +33,9 @@ Perform the following steps to view the Client Failover Service logs:
    https://docs.aveva.com/bundle/pi-adapter-mqtt/page/main/shared-content/troubleshooting/troubleshooting.html
 
 2. The Client Failover Service sends tracing data to PI Web API, when log level is set to Verbose.
+   
+   **Example:**<br> A successful message after receiving response from get configuration endpoint. 
+   
+   ```json
+   [15:17:10:773 VRB PIWebAPI:00000002] [Basic] HTTP GET /api/v1/configuration responded 200 in 2538.1131 ms
+   ```
