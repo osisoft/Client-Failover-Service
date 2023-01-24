@@ -19,20 +19,20 @@ is normally on the "C:" drive.  The folder names are as follows:
 
 Before changing the service's account, perform the following steps on each of the folders listed above:
 
-- In Windows Explorer, right-click on the folder name and select "Properties"
-- Click on the "Security" tab
-- Click the "Edit" button
-- Select the desired user account from the "Group or user names" list
-- In the "Permissions for Users" list, check "Read" and "Write" if they are not already selected
-- Click "OK" twice to close both dialogs
+1. In Windows Explorer, right-click on the folder name and select "Properties"
+2. Click on the "Security" tab
+3. Click the "Edit" button
+4. Select the desired user account from the "Group or user names" list
+5. In the "Permissions for Users" list, check "Read" and "Write" if they are not already selected
+6. Click "OK" twice to close both dialogs
 
-After setting these folder permissions, perform these steps to change the service account:
-- Open the "Services" control panel applet
-- Select "Client Failover Service"
-- Right-click and select "Properties"
-- Click the "Log On" tab
-- Under "This Account", select the desired account name and password
-- Click "OK" to close the dialog
-- Right-click on the service and select "Restart"
+After setting folder permissions, perform these steps to change the service account:
+1. Open the "Services" control panel applet
+2. Select "Client Failover Service"
+3. Right-click and select "Properties"
+4. Click the "Log On" tab
+5. Under "This Account", select the desired account name and password
+6. Click "OK" to close the dialog
+7. Right-click on the service and select "Restart"
 
 
