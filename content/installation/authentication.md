@@ -28,7 +28,7 @@ However, Basic authentication is less secure than Kerberos, since Windows user c
 ## Groups
 The Failover Service creates two local user groups when it is installed. For both Kerberos and Basic authentication, the Client Failover Service performs authorization on every request and verifies that the requesting account is a member of the required group to be able to complete the request.
 
-**AVEVAFailoverUsers:** Users of the Failover Service, typically accounts running adapters. Members of this group are able to configure the failover service and post heartbeat messages. The account specified in the adapter failover configuration must be a member of this group.
+**AVEVAFailoverUsers:** Users of the Failover Service, typically accounts running adapters. Members of this group are able to configure the failover service (such as creating failover groups/sessions and delete sessions) and post heartbeat messages. The account specified in the adapter failover configuration must be a member of this group.
 
 **AVEVAFailoverAdministrators:** Administrators of the Failover Service. Members of this group are able to delete failover groups, post role overrides, and modify the global configuration.
 
@@ -37,15 +37,15 @@ The following REST URLs table contains examples of endpoints that you can use to
 
 | Relative URL | HTTP verb | Action | Group Required |
 | ------------ | --------- | ------ | ------|
-| api/v1/clientfailover/groups/{groupID} | GET | Gets all existing groups | AVEVAFailoverUsers |
+| api/v1/clientfailover/groups/{groupID} | GET | Gets the group specified by groupID | AVEVAFailoverUsers |
 | api/v1/clientfailover/groups/{groupID} | DELETE | Deletes the group specified by groupID | AVEVAFailoverAdministrators |
 | api/v1/clientfailover/groups/{groupID}/clientSessions | GET | Gets the client sessions in the group specified by groupID | AVEVAFailoverUsers |
-| api/v1/clientfailover/groups/{groupID}/clientSessions/{sessionID} | DELETE | Deletes the client session in groupID with sessionID | AVEVAFailoverAdministrators |
+| api/v1/clientfailover/groups/{groupID}/clientSessions/{sessionID} | DELETE | Deletes the client session in groupID with sessionID | AVEVAFailoverUsers |
 | api/v1/clientfailover/groups/{groupID}/clientSessions/{sessionID}/roleoverride | POST | Sets the session's role to the value specified in the request body | AVEVAFailoverAdministrators |
 | api/v1/configuration | GET | Gets the global configuration | AVEVAFailoverAdministrators |
 | api/v1/configuration | PUT | Sets the global configuration | AVEVAFailoverAdministrators |
 
 ## Troubleshooting
-If the failover service runs as a domain account but the SPN is not setup correctly, when the adapter service communicates with kerberos tickets, the following error message can be expected in the adapter log. The resolution is to setup the SPN for domain account under which the client failover service is running. 
+If the failover service runs as a domain account but the SPN is not set up correctly, the following error message can be expected in the adapter log. The resolution is to setup the SPN for domain account under which the client failover service is running. 
 
 `[Error] Could not send heartbeat to endpoint https://<failover service node>:<Port>/api/v1/clientfailover/.`
