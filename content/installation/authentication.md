@@ -5,6 +5,8 @@ uid: AuthenticationFailover
 # Authentication
 The Client Failover Service supports the following authentication methods for PI Adapter clients and REST tools.
 
+## Authentication Methods
+
 ### Kerberos
 
 Kerberos provides per-user security that is native to Windows and Active Directory, and is supported with PI Adapters and some REST clients. Kerberos does not rely on credentials being transmitted across the wire, which makes it ideal for use with untrusted connections.
@@ -28,7 +30,7 @@ The Failover Service creates two local user groups when it is installed. For bot
 
 **AVEVAFailoverUsers:** Users of the Failover Service, typically accounts running adapters. Members of this group are able to configure the failover service and post heartbeat messages. The account specified in the adapter failover configuration must be a member of this group.
 
-**AVEVAFailoverAdministrators:** Administrators of the Failover Service. Members of this group are able to delete failover groups, delete sessions, post role overrides, and modify the global configuration.
+**AVEVAFailoverAdministrators:** Administrators of the Failover Service. Members of this group are able to delete failover groups, post role overrides, and modify the global configuration.
 
 ## REST URLs
 The following REST URLs table contains examples of endpoints that you can use to manually create requests along with their corresponding required group membership.
