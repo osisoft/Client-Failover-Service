@@ -8,20 +8,20 @@ The Client Failover Service produces various types of health data. You can use h
 
 The Client Failover Service also produces diagnostic data which lives alongside the health data. You can use diagnostic data to find more information about a particular Client Failover Service instance. 
 
-The data can be sent to both PI Web API endpoints or Aveva Data Hub (ADH) endpoints. For more information on configuring health, see [Health Endpoints](xref:HealthEndpoints).
+The data can be sent to both PI Web API endpoints or AVEVA Data Hub endpoints. For more information on configuring health, see [Health Endpoints](xref:HealthEndpoints).
 
 ## Health endpoint differences
 
 Two OMF endpoints are currently supported for adapter health data:
 
 - PI Web API
-- Aveva Data Hub (ADH)
+- AVEVA Data Hub
 
 There are a few differences in how these two systems treat the associated health and diagnostics data.
 
 - PI Web API parses the information and sends it to configured PI servers for the OMF endpoint. The static data is used to create an AF structure on a PI AF server. The dynamic health data is time-series data that is stored in PI points on a PI Data Archive. You can see it in the AF structure as PI point data reference attributes.
 
-- In Aveva Data Hub (ADH), both health and diagnostics data are created as assets. The data are available in the Asset Explorer and you can use them in the ADH Trend feature. For more information, see the ADH documentation [Assets](https://docs.osisoft.com/bundle/ocs/page/add-organize-data/organize-data/assets/asset-concept.html). For dynamic data, each value is its own stream with the timestamp property as the single index.
+- In AVEVA Data Hub, both health and diagnostics data are created as assets. The data are available in the Asset Explorer and you can use them in the ADH Trend feature. For more information, see the AVEVA Data Hub documentation [Assets](https://docs.osisoft.com/bundle/ocs/page/add-organize-data/organize-data/assets/asset-concept.html). For dynamic data, each value is its own stream with the timestamp property as the single index.
 
 ## AF structure
 
