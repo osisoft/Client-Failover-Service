@@ -85,7 +85,7 @@ The following parameters are available for configuring health endpoints:
 | api/v1/configuration/healthEndpoints      | PUT       | Replaces all health endpoints. **Note:** Requires an array of endpoints |
 | api/v1/configuration/healthEndpoints/*Id* | GET       | Gets configured health endpoint by *Id* |
 | api/v1/configuration/healthEndpoints/*Id*| DELETE     | Deletes configured health endpoint by *Id* |
-| api/v1/configuration/healthEndpoints/*Id* | PUT       | Updates or creates a new health endpoint with the specified *Id* |
+| api/v1/configuration/healthEndpoints/*Id* | PUT       | Updates health endpoint with the specified *Id* |
 
 **Note:** Replace *Id* with the ID of the health endpoint.
 
