@@ -18,4 +18,4 @@ The following health data is available:
 - [Next Health Message Expected](xref:NextHealthMessageExpectedFailover)
 - FailoverObjectCount
    - Sessions - The number of active sessions (adapters) communicating with the Client Failover Service.
-   - Groups - The total number of groups configured in the ClientFailoverService. 
+   - Groups - The total number of groups configured in the Client Failover Service. 
