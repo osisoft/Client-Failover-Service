@@ -6,7 +6,7 @@ uid: NextHealthMessageExpectedFailover
 
 This property is similar to a heartbeat. A new value for `NextHealthMessageExpected` is sent by an individual Client Failover Service on a periodic basis while it is functioning properly. This value is a timestamp that indicates when the next value should be received. 
 
-When monitoring, if the next value is not received by the indicated time, this likely means that there is an issue. It could be an issue with the Client Failover Service, network connection between the health endpoint and the Service, and so on.
+When monitoring, if the next value is not received by the indicated time, this likely means that there is an issue. It could be an issue with the Client Failover Service, network connection between the health endpoint and the Service, and so on. The logs can be reviewed to understand the root cause. For additional information, see [Troubleshooting](xref:Troubleshooting).
 
 | Property                        | Type                                 | Description                            |
 |---------------------------------|--------------------------------------|----------------------------------------|
