@@ -6,8 +6,6 @@ uid: PerformARoleOverride
 
 Administrators can force a secondary session to be the primary session by performing a role override using the POST method using one of the following REST tools: cURL or Postman. The secondary session can be set as primary for a defined amount of time or can be set as the primary indefinitely.
 
-**Note:** If a heartbeat is not received during a period longer than the Failover Timeout and the session becomes stale, the primary session will remain.
-
 ## cURL
 
 To perform a role override using cURL:
@@ -17,7 +15,7 @@ To perform a role override using cURL:
 2. Run a `POST` command, defining the endpoint port, group ID and session ID for the session you want to make primary:
 
    ```bash
-      curl --request POST -d "https://<host>:<port>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride"
+      curl --request POST "https://<host>:<port>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride" --data-raw "{"Value": "Primary"}"
       ```
 ## Postman
 
@@ -42,10 +40,11 @@ To perform a role override using Postman:
    **Note:** The forced primary session reverts to the default automatic mode by the failover endpoint when the time defined in the ExpirationPeriod expires.
  
 6. Example
-   ```   
+   ``` 
    {
      "Value": "Primary",
-     "ExpirationPeriod": "00:08:00"
+     "ExpirationPeriod": "08:00:00"
    }
    ```
 
+**Note:** When heartbeats are not received during a period longer than the Failover Timeout and the session becomes stale, the session will still remain in primary role while the role override is in effect
