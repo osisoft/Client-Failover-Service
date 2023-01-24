@@ -12,7 +12,7 @@ The data can be sent to both PI Web API endpoints or AVEVA Data Hub endpoints. F
 
 ## Health endpoint differences
 
-Two OMF endpoints are currently supported for adapter health data:
+Two OMF endpoints are currently supported for health data:
 
 - PI Web API
 - AVEVA Data Hub
