@@ -3,13 +3,30 @@ uid: AuthenticationFailover
 ---
 
 # Authentication
-The Client Failover Service performs basic authentication on every request and verifies that the account is a member of the required group or groups to be able to complete the request.
+The Client Failover Service supports the following authentication methods for adapter clients and REST tools.
 
-## Accounts
-Credentials provided in the basic authentication header of the request are validated. If the credentials are valid, the request is authorized based on membership of the following local groups.
+### Kerberos
+
+Kerberos provides per-user security that is native to Windows and Active Directory, and that is well supported in Microsoft clients. Kerberos does not rely on credentials being transmitted across the wire, which makes it ideal for use with untrusted connections.
+
+If the Client Failover Service is running with the default identity of "NT SERVICE\AVEVAFailover", it is not necessary to configure Service Principal Names (SPNs) on the machine where the service is running.  However, if the service identity is changed to a domain user account, the following SPNs must be configured and associated with that domain account:
+
+  * HTTP/*hostname*
+  * HTTP/*fully.qualified.hostname*
+  
+### Basic
+
+Basic authentication is defined in the Request for Comments document [RFC 2617 HTTP Authentication](https://www.ietf.org/rfc/rfc2617.txt)
+and is supported by PI Adapters and most REST clients (e.g., cURL and Postman). Basic authentication as implemented in the Client Failover Service
+is simple to use, provides granular, per-user security based on Windows identity, and can help avoid configuration problems related to Kerberos. 
+When combined with SSL, as in all Client Failover Service requests, Basic authentication is reasonably secure.
+
+However, Basic authentication is less secure than Kerberos, since Windows user credentials must be included in and are transmitted with each request. In addition, Basic authentication requires that the Client Failover Service keeps the decrypted username and password in memory for the duration of the request. You should not use Basic authentication unless you are confident of the security of the server on which you are running the Client Failover Service.
 
 ## Groups
-The Failover Service creates two local user groups when it is installed. Group membership is used to determine authorization for each request. 
+For both Kerberos and Basic authentication, the Client Failover Service performs authorization on every request and verifies that the account is a member of the required group or groups to be able to complete the request.  
+
+The Failover Service creates two local user groups when it is installed. Authorization of each client request depends on the requesting user's membership in these groups.
 
 **AVEVAFailoverUsers:** Users of the Failover Service, typically accounts running adapters. Members of this group are able to configure the failover service and post heartbeat messages. The account specified in the adapter failover configuration must be a member of this group.
 
