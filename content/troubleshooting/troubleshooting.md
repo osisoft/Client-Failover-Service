@@ -8,7 +8,7 @@ The Client Failover Service provides features for troubleshooting issues related
 
 ## Logs
 
-Client Failover Service logs messages in event viewer. It provides information on the health of the service, groups, sessions.
+Client Failover Service logs messages in windows event viewer.
 
 Perform the following steps to view the Client Failover Service logs:
 
