@@ -3,11 +3,11 @@ uid: AuthenticationFailover
 ---
 
 # Authentication
-The Client Failover Service supports the following authentication methods for adapter clients and REST tools.
+The Client Failover Service supports the following authentication methods for PI Adapter clients and REST tools.
 
 ### Kerberos
 
-Kerberos provides per-user security that is native to Windows and Active Directory, and that is well supported in Microsoft clients. Kerberos does not rely on credentials being transmitted across the wire, which makes it ideal for use with untrusted connections.
+Kerberos provides per-user security that is native to Windows and Active Directory, and is supported with PI Adapters and some REST clients. Kerberos does not rely on credentials being transmitted across the wire, which makes it ideal for use with untrusted connections.
 
 If the Client Failover Service is running with the default identity of "NT SERVICE\AVEVAFailover", it is not necessary to configure Service Principal Names (SPNs) on the machine where the service is running.  However, if the service identity is changed to a domain user account, the following SPNs must be configured and associated with that domain account:
 
@@ -24,13 +24,11 @@ When combined with SSL, as in all Client Failover Service requests, Basic authen
 However, Basic authentication is less secure than Kerberos, since Windows user credentials must be included in and are transmitted with each request. In addition, Basic authentication requires that the Client Failover Service keeps the decrypted username and password in memory for the duration of the request. You should not use Basic authentication unless you are confident of the security of the server on which you are running the Client Failover Service.
 
 ## Groups
-For both Kerberos and Basic authentication, the Client Failover Service performs authorization on every request and verifies that the account is a member of the required group or groups to be able to complete the request.  
-
-The Failover Service creates two local user groups when it is installed. Authorization of each client request depends on the requesting user's membership in these groups.
+The Failover Service creates two local user groups when it is installed. For both Kerberos and Basic authentication, the Client Failover Service performs authorization on every request and verifies that the requesting account is a member of the required group to be able to complete the request.
 
 **AVEVAFailoverUsers:** Users of the Failover Service, typically accounts running adapters. Members of this group are able to configure the failover service and post heartbeat messages. The account specified in the adapter failover configuration must be a member of this group.
 
-**AVEVAFailoverAdministrators:** Administrators of the Failover Service. Members of this group are able to delete failover groups, delete sessions, post role overrides, and get or put the global configuration.
+**AVEVAFailoverAdministrators:** Administrators of the Failover Service. Members of this group are able to delete failover groups, delete sessions, post role overrides, and modify the global configuration.
 
 ## REST URLs
 The following REST URLs table contains examples of endpoints that you can use to manually create requests along with their corresponding required group membership.
