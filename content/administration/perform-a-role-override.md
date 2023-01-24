@@ -47,4 +47,4 @@ To perform a role override using Postman:
    }
    ```
 
-**Note:** When heartbeats are not received during a period longer than the Failover Timeout and the session becomes stale, the session will still remain in primary role while the role override is in effect
+**Note:** When heartbeats are not received during a period longer than the Failover Timeout and the session becomes stale, the session will still remain in primary role while the role override is in effect.
