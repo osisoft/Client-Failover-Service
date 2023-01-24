@@ -6,7 +6,7 @@ uid: CertificateMgmtFailover
 
 To enable HTTPs for REST API endpoints, the server requires an SSL certificate. Certificates identify client applications and machines on servers and allow for building a secure communication link. The Client Failover Service generates a self-signed certificate with a 15-year expiration date during installation. Instead of being in the machine’s certificate store, the certificate can be found in a data folder ((%PROGRAMDATA%/AVEVA/Client Failover Service/Certificates) on your machine.
 
-The Certificates folder contains a public CRT certificate file and a private KEY file. It allows read access for all users of the machine and the virtual service account (NT SERVICE\AVEVAFailover). The private KEY file can be found in a subdirectory named Keys. This folder is only accessible by machine administrators and the virtual service account.
+The Certificates folder contains a public CRT certificate file and a private KEY file. The Certificates folder is accessible by all users of the machine and the virtual service account (NT SERVICE\AVEVAFailover). The private KEY file can be found in a subdirectory named Keys. This folder is only accessible by machine administrators and the virtual service account.
 
 The Certificates folder also contains a folder named Archive.  This folder is normally empty, but it may contain copies of certificate and/or key files that are detected as invalid when the service starts.  These may be useful when troubleshooting any problems with certificates.
 
