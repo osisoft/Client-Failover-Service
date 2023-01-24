@@ -32,7 +32,7 @@ To perform a role override using Postman:
    https://<host>:<port>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride
    ```
 
-3. In the body of the request, enter the Value as **primary**.
+3. In the body of the request, enter the value as **primary**.
 
 4. To set an expiration period, enter the time using the HH:MM:SS format. For example, to set a secondary session as the primary for 8 hours, you would enter 08:00:00.
 
