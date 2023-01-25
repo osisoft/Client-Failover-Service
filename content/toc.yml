@@ -15,7 +15,6 @@
   items:
   - topicUid: CreateUserFailover
   - topicUid: AddAdminGroup
-  - topicUid: DeleteASession
   - topicUid: DeleteAGroup
   - topicUid: PerformARoleOverride
   - topicUid: CancelaRoleOverride
