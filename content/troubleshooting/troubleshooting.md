@@ -27,7 +27,7 @@ Perform the following steps to view the Client Failover Service logs:
 
 ## Health and diagnostics egress to PI Web API
 
-1. The Client Failover Service sends health and diagnostics data to PI Web API; in some cases, conflicts may occur that are due to changes or perceived changes in PI      Web API. For example, a `409 - Conflict` error message displays if you upgrade your client failover service version and the PI points do not match in the upgraded      version. However, data is continued to be sent as long as containers are created, so buffering only starts if no containers are created.
+1. The Client Failover Service sends health and diagnostics data to PI Web API; in some cases, conflicts may occur that are due to changes or perceived changes in PI      Web API. For example, a `409 - Conflict` error message displays if you upgrade your client failover service version and the PI points do not match in the upgraded      version.
 
    To resolve the conflict, perform following steps:
    1. Stop the Client Failover Service.
