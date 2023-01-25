@@ -21,7 +21,7 @@
   - topicUid: CancelaRoleOverride
 - topicUid: HealthAndDiagnosticsFailover
   items:
-  - topicUid: AdapterHealthFailover
+  - topicUid: ClientFailoverHealth
     items:
     - topicUid: DeviceStatusFailover
     - topicUid: NextHealthMessageExpectedFailover
