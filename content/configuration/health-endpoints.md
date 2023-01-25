@@ -28,9 +28,9 @@ Complete the following steps to configure health endpoints. Use the `PUT` method
 
 6. Enter the following cURL command (which uses the `PUT` method) to initialize the health endpoint configuration.
 
-    ```bash
-    curl -d "@<json file name>.json" -H "Content-Type: application/json" -X PUT "http://localhost:5590/api/v1/configuration/system/healthendpoints"
-    ```
+```
+curl -d "@<json file name>.json" -H "Content-Type: application/json" -X PUT "http://localhost:5590/api/v1/configuration/system/healthendpoints"
+```
     
  **Note:** For a list of other REST operations you can perform, like updating or replacing a health endpoints configuration, see [REST URLs](#rest-urls).
 
@@ -53,7 +53,7 @@ The following parameters are available for configuring health endpoints:
 
 ### AVEVA Data Hub endpoint
 
-```code
+```json
 {
     "Id": "AVEVA Data Hub",
     "Endpoint": "https://<AVEVA Data Hub OMF endpoint>",
@@ -64,7 +64,7 @@ The following parameters are available for configuring health endpoints:
 
 ### PI Web API endpoint
 
-```code
+```json
 {
     "Id": "PI Web API",
     "Endpoint": "https://<pi web api server>:<port>/piwebapi/omf/",
