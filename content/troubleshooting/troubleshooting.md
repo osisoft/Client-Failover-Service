@@ -33,8 +33,9 @@ Perform the following steps to view the Client Failover Service logs:
 
 2. The Client Failover Service sends tracing data to PI Web API, when log level is set to Verbose.
    
-   **Example:**<br> A successful message after receiving response from get configuration endpoint. 
+   **Example:**<br> Response received if user is unauthorized. 
    
    ```json
-   [15:17:10:773 VRB PIWebAPI:00000002] [Basic] HTTP GET /api/v1/configuration responded 200 in 2538.1131 ms
+   [10:42:40:106 DBG 0HMNPH3J4VEE4:00000006] Post to https://pi.osisoft.int/piwebapi/omf/ unsuccessful: Unauthorized
+   Request Content: [{"containerid":"SPHINX-W11A.ClientFailoverService.System.Diagnostics","values":[{"Timestamp":"2023-01-25T18:42:40.0864423Z","ProcessIdentifier":3968,"StartTime":"2023-01-18T03:33:42.3798201Z","WorkingSet":50.05312,"TotalProcessorTime":135.875,"TotalUserProcessorTime":89.203125,"TotalPrivilegedProcessorTime":46.671875,"ThreadCount":25,"HandleCount":1001,"ManagedMemorySize":12.735408,"PrivateMemorySize":73.998336,"PeakPagedMemorySize":74.002432,"StorageTotalSize":107027.099648,"StorageFreeSpace":64866.410496}]},{"containerid":"SPHINX-W11A.ClientFailoverService.ClientFailover.DeviceStatus","values":[{"Timestamp":"2023-01-25T18:42:40.0908109Z","DeviceStatus":0}]},{"containerid":"W11A.ClientFailoverService.ClientFailover.FailoverObjectCount","values":[{"Timestamp":"2023-01-25T18:42:40.0908126Z","Groups":1,"Sessions":2}]},{"containerid":"W11A.ClientFailoverService.ClientFailover.NextHealthMessageExpected","values":[{"Timestamp":"2023-01-25T18:42:40.0908161Z","NextHealthMessageExpected":"2023-01-25T18:43:40.0908162Z"}]}]
    ```
