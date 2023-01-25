@@ -16,7 +16,9 @@ If the Client Failover Service is running with the default identity of "NT SERVI
   * HTTP/*hostname*
   * HTTP/*fully.qualified.hostname*
 
-> Note: If the failover service runs as a domain account but the SPN is not set up correctly, error messages can be expected in the adapter log. The resolution is to setup the SPN for domain account under which the client failover service is running. 
+> Note: If the failover service runs as a domain account but the SPN is not set up correctly, the following error message (excerpt) can be expected in the adapter log. The resolution is to set up the SPN for domain account under which the client failover service is running. 
+> 
+> `[Error] Could not send heartbeat to endpoint https://<failover service node>:<Port>/api/v1/clientfailover/ {"OperationId":"86e17027c84c4e1721b438606db413be","Error":"An error occurred.","Reason":"System.InvalidOperationException: An anonymous request was received in between authentication handshake requests..."}`
   
 ### Basic
 
