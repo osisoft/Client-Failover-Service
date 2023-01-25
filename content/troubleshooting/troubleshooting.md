@@ -29,8 +29,7 @@ Perform the following steps to view the Client Failover Service logs:
 
 1. The Client Failover Service sends health and diagnostics data to PI Web API; in some cases, conflicts may occur that are due to changes or perceived changes in PI      Web API. For example, a `409 - Conflict` error message displays if you upgrade your client failover service version and the PI points do not match in the upgraded      version. However, data is continued to be sent as long as containers are created, so buffering only starts if no containers are created.
 
-   To resolve the conflict, please refer to this document: <br>
-   https://docs.aveva.com/bundle/pi-adapter-mqtt/page/main/shared-content/troubleshooting/troubleshooting.html
+   To resolve the conflict, please refer to [Clean up the development environment](https://docs.aveva.com/bundle/omf-with-pi-web-api/page/clean-up-the-development-environment.html) in the PI Web API documentation.
 
 2. The Client Failover Service sends tracing data to PI Web API, when log level is set to Verbose.
    
