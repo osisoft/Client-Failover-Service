@@ -16,16 +16,16 @@
   items:
   - topicUid: CreateUserFailover
   - topicUid: AddAdminGroup
-  - topicUid: DeleteASession
   - topicUid: DeleteAGroup
   - topicUid: PerformARoleOverride
   - topicUid: CancelaRoleOverride
 - topicUid: HealthAndDiagnosticsFailover
   items:
-  - topicUid: AdapterHealthFailover
+  - topicUid: ClientFailoverHealth
     items:
     - topicUid: DeviceStatusFailover
     - topicUid: NextHealthMessageExpectedFailover
   - topicUid: FailoverDiagnostics
     items:
     - topicUid: SystemFailover
+- topicUid: Troubleshooting
