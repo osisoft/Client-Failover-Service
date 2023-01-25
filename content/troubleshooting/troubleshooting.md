@@ -19,7 +19,7 @@ Perform the following steps to view the Client Failover Service logs:
    **Example:**<br> A successful message when client gets promoted from Secondary to Primary in the event viewer log:
 
     ```
-    [11:12:18:075 INF PIWebAPI:0000000F] Client 'f9d86db5-65c5-462b-8519-8d332dbcaf66' promoted to Primary. 
+    [11:12:18:075 VRB PIWebAPI:0000000F] Client 'f9d86db5-65c5-462b-8519-8d332dbcaf66' promoted to Primary. 
     Reason: Only one client in group.
     ```
 
