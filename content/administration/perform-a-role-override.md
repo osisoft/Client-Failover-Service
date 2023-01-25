@@ -37,7 +37,7 @@ To perform a role override using Postman:
      "ExpirationPeriod": "08:00:00"
    }
    ```
-**Note:** The forced primary session reverts to the default automatic mode by the failover endpoint when the time defined in the ExpirationPeriod expires.
+   **Note:** The forced primary session reverts to the default automatic mode by the failover endpoint when the time defined in the ExpirationPeriod expires.
 
 4. Select **SEND** to complete the override. 
 
