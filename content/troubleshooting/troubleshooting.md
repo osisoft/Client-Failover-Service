@@ -18,7 +18,7 @@ Perform the following steps to view the Client Failover Service logs:
    
    **Example:**<br> A successful message when client gets promoted from Secondary to Primary in the event viewer log:
 
-    ```json
+    ```
     [11:12:18:075 INF PIWebAPI:0000000F] Client 'f9d86db5-65c5-462b-8519-8d332dbcaf66' promoted to Primary. 
     Reason: Only one client in group.
     ```
@@ -35,7 +35,7 @@ Perform the following steps to view the Client Failover Service logs:
    
    **Example:**<br> Response received if user is unauthorized. 
    
-   ```json
+   ```
    [10:42:40:106 DBG 0HMNPH3J4VEE4:00000006] Post to https://pi.osisoft.int/piwebapi/omf/ unsuccessful: Unauthorized
    Request Content: [{"containerid":"SPHINX-W11A.ClientFailoverService.System.Diagnostics","values":[{"Timestamp":"2023-01-25T18:42:40.0864423Z","ProcessIdentifier":3968,"StartTime":"2023-01-18T03:33:42.3798201Z","WorkingSet":50.05312,"TotalProcessorTime":135.875,"TotalUserProcessorTime":89.203125,"TotalPrivilegedProcessorTime":46.671875,"ThreadCount":25,"HandleCount":1001,"ManagedMemorySize":12.735408,"PrivateMemorySize":73.998336,"PeakPagedMemorySize":74.002432,"StorageTotalSize":107027.099648,"StorageFreeSpace":64866.410496}]},{"containerid":"SPHINX-W11A.ClientFailoverService.ClientFailover.DeviceStatus","values":[{"Timestamp":"2023-01-25T18:42:40.0908109Z","DeviceStatus":0}]},{"containerid":"W11A.ClientFailoverService.ClientFailover.FailoverObjectCount","values":[{"Timestamp":"2023-01-25T18:42:40.0908126Z","Groups":1,"Sessions":2}]},{"containerid":"W11A.ClientFailoverService.ClientFailover.NextHealthMessageExpected","values":[{"Timestamp":"2023-01-25T18:42:40.0908161Z","NextHealthMessageExpected":"2023-01-25T18:43:40.0908162Z"}]}]
    ```
