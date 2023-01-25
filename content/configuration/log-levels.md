@@ -27,16 +27,11 @@ The following parameter is available to configure logging:
 
 ## Change Log Levels
 
-Administrators can change the log level using cURL or Postman.  An example request body setting the level to "Verbose" is as follows:
-```bash
-{
-    "LogLevel": "Verbose"
-}
-```
+Administrators can change the log level using cURL or Postman.
 
 ### cURL
 
-To change a log session using cURL:
+To change the log level using cURL:
 
 1. Open a command line.
 
@@ -48,16 +43,22 @@ curl -H 'Content-Type: application/json' -X PUT -d '{ "LogLevel": "Verbose" }' "
      
 ### Postman
 
-To change a log session using Postman:
+To change the log level using Postman:
 
 1. Select **PUT** from the HTTP request drop-down.
 
-2. Using the following link, define the host and the port number:
+2. Enter the following for the Request URL, defining the host and the port number:
 
 ```bash
 https://<host>:<port>/api/v1/configuration/logging
 ```
 
-3. In the body of the request, enter the example request body above and change the logging level as desired.
+3. In the body of the request, enter the following and change the level to the desired value:
+
+```bash
+{
+    "LogLevel": "Information"
+}
+```
 
 4. Select **SEND** to change the log level. 
