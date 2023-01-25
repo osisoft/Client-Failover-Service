@@ -14,11 +14,11 @@ To delete a group using cURL:
 
 2. Run a `DELETE` command, defining the endpoint port and group ID:
 
-   **Note:** To delete a group, there cannot be any active open sessions within the group. 
+   **Note:** To delete a group, there cannot be any active open sessions within the group.
 
    ```bash
-      curl --request DELETE "https://<host>:<port>/api/v1/clientfailover/groups/<groupID>"
-      ```
+   curl --request DELETE "https://<host>:<port>/api/v1/clientfailover/groups/<groupID>"
+   ```
 
 ## Postman
 
@@ -28,10 +28,10 @@ To delete a group using Postman:
 
 2. Using the following link, define the endpoint port and group ID:
 
-   **Note:** To delete a group, there cannot be any active open sessions within the group. 
+   **Note:** To delete a group, there cannot be any active open sessions within the group.
 
    ```bash
-      https://<host>:<port>/api/v1/clientfailover/groups/<groupID>
-      ```
+   https://<host>:<port>/api/v1/clientfailover/groups/<groupID>
+   ```
 
-3. Select **Send** to delete the group. 
+3. Select **Send** to delete the group.

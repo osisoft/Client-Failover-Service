@@ -29,7 +29,7 @@ With a health endpoint configured to a PI server, you can use PI System Explorer
 
 - The **Elements** root contains a link to the **Client Failover Services** node. This is the root node for all Client Failover Service instances. Each instance of **ClientFailoverService** element contains the diagnostic data for the corresponding service following the format of `{ComputerName}.ClientFailoverService`. For example, in the following image, the computer name is “USOAKL10657”.
 
-![Health&Diagnostics](../images/elements-root.png)
+    ![Health&Diagnostics](../images/elements-root.png)
 
 - Under each **ClientFailoverService**, you will find a **ClientFailover** node. Each node's name is defined by the node's corresponding computer name, service name, and component type in the following format: `{ComputerName}.ClientFailoverService.ClientFailover`.
   
