@@ -14,9 +14,9 @@ To perform a role override using cURL:
 
 2. Run a `POST` command, defining the endpoint port, group ID and session ID for the session you want to make primary:
 
-   ```bash
-      curl --request POST "https://<host>:<port>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride" --data-raw "{"Value": "Primary"}"
-      ```
+```
+curl --request POST "https://<host>:<port>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride" --data-raw "{"Value": "Primary"}"
+```
 ## Postman
 
 To perform a role override using Postman:
@@ -25,16 +25,15 @@ To perform a role override using Postman:
 
 2. Using the following link, define the endpoint port, group ID and session ID for the session you want to make primary:
 
-   ```bash
-      https://<host>:<port>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride
-      ```
-
+   ```
+   https://<host>:<port>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride
+   ```
 3. In the body of the request, enter the _Value_ as _primary_. To set an expiration period, enter the _ExpirationPeriod_ using the HH:MM:SS format. For example, to set a session as the primary for 8 hours, you would enter 08:00:00. If an expiration period is not required, you can remove ExpirationPeriod from the body of the request and the session remains as the Primary session indefinitely.
       
-      ``` 
+      ```json
    {
-     "Value": "Primary",
-     "ExpirationPeriod": "08:00:00"
+       "Value": "Primary",
+       "ExpirationPeriod": "08:00:00"
    }
    ```
    **Note:** The forced primary session reverts to the default automatic mode by the failover endpoint when the time defined in the ExpirationPeriod expires.
