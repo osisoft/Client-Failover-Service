@@ -8,7 +8,7 @@ To enable HTTPs for REST API endpoints, the server requires an SSL certificate. 
 
 The Certificates folder contains a public CRT certificate file and a private KEY file. The Certificates folder is accessible by all users of the machine and the virtual service account (NT SERVICE\AVEVAFailover). The private KEY file can be found in a subdirectory named Keys. This folder is only accessible by machine administrators and the virtual service account.
 
-The Certificates folder also contains a folder named Archive.  This folder is normally empty, but it may contain copies of certificate and/or key files that are detected as invalid when the service starts.  These may be useful when troubleshooting any problems with certificates.
+The Certificates folder also contains a folder named Archive. This folder is normally empty, but it may contain copies of certificate and/or key files that are detected as invalid when the service starts. These may be useful when troubleshooting any problems with certificates.
 
 **Note:** The certificate used by Client Failover Service must be trusted by the device running the adapter. If it is not trusted, the [ValidateEndpointCertificate](configuration/health-endpoints.md) must be set to false. 
 
