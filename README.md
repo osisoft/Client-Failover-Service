@@ -1,10 +1,12 @@
 # Client Failover Service
 
-Client Failover Service is... tbd.
+The Client Failover Service is an application that minimizes data loss by enabling adapter-level failover. This Service manages multiple failover groups by assigning primary and secondary roles to adapters in each individual failover group.
+
+This repository contains the documentation for the Client Failover Service. You can access a readable version of this documentation here (add link when published).
 
 ## License
 
-<a href="https://www.osisoft.com/copyright/">&copy; 2020 - 2022 OSIsoft, LLC. All rights reserved.</a>
+<a href="https://www.osisoft.com/copyright/">&copy; 2020 - 2023 OSIsoft, LLC. All rights reserved.</a>
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
