@@ -5,6 +5,7 @@ uid: ServiceAccount
 # Service Account
 When the Client Failover Service is installed, it creates a Windows Service named "Client Failover Service".  This service runs under a virtual service account named "NT SERVICE\AVEVAFailover".
 
+## Change the Service Account
 It is possible to change the account used to run the Client Failover Service, to either a domain account or another account on the local machine.
 Before changing the service to run under a different account, you must give that account access to the service's data folders.  These folders are located in the system's "ProgramData" folder, which is normally on the "C:" drive.  The folder names are as follows:
 
@@ -13,7 +14,6 @@ Before changing the service to run under a different account, you must give that
 - %ProgramData%\AVEVA\Client Failover Service\Certificates\Archive
 - %ProgramData%\AVEVA\Client Failover Service\Certificates\Keys
 
-## Change the Service Account
 Before changing the service's account, perform the following steps on each of the folders listed above:
 
 1. In Windows Explorer, right-click on the folder name and select "Properties"
