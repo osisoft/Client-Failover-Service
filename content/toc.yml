@@ -9,6 +9,7 @@
   items:
   - topicUid: ConfigurationTools
   - topicUid: CertificateMgmtFailover
+  - topicUid: ServiceAccount
   - topicUid: LogLevels
   - topicUid: HealthEndpoints
 - topicUid: AdministrationFailover
