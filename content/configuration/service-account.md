@@ -34,7 +34,7 @@ After setting folder permissions, perform these steps to change the service acco
 6. Click "OK" to close the dialog
 7. Right-click on the service and select "Restart"
 
-## Reconfigure health endpoints
+## Reconfigure Health Endpoints
 Use the following procedure to reconfigure the service account if the configuration includes one of the following:
 - Health endpoints that use Basic authentication (Username and Password) while sending data to PI Web API OMF endpoint
 - Health endpoints that uses ClientId or ClientSecret while sending data to the AVEVA Cloud services OMF endpoint
