@@ -31,4 +31,11 @@ After setting folder permissions, perform these steps to change the service acco
 6. Click "OK" to close the dialog
 7. Right-click on the service and select "Restart"
 
-
+Additional steps will need to be followed before and after changing the service acccount if the configuration includes Healthendpoints that use Basic authentication (Username and Password) while sending data to a PI Web API OMF endpoint or ClientId/ClientSecret while sending to Aveva Cloud services OMF endpoint. 
+1. Use the `GET` method in conjunction with the `http://<host>:<port>/api/v1/configuration/healthendpoints` REST endpoint to read the configuration.
+2. Make a note of the configuration from step 1 as we will use it again later. The `Password` or `ClientSecret` fields will need to configured with actual values. 
+3. Use the `DELETE` method in conjunction with the `http://<host>:<port>/api/v1/configuration/healthendpoints` REST endpoint to delete the health endpoints.
+4. Stop the service.
+5. Perform the ACL changes listed above.
+6. Start the service with the new user account as listed above. 
+7. Use the `PUT` method in conjunction with the `http://<host>:<port>/api/v1/configuration` with the body from step 2 to initialize the configuration.
