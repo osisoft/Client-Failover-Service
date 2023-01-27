@@ -23,7 +23,7 @@ Before changing the service's account, perform the following steps on each of th
 5. In the "Permissions for Users" list, check "Read" and "Write" if they are not already selected
 6. Click "OK" twice to close both dialogs
 
-  > **Note:** if you have configured health endpoints, follow the instructions in the section "Reconfigure Health Endpoints" below.
+  > **Note:** If you have configured health endpoints, follow the instructions in the section "Reconfigure Health Endpoints" below.
 
 After setting folder permissions, perform these steps to change the service account:
 1. Open the "Services" control panel applet
