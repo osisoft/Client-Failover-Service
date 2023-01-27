@@ -22,7 +22,7 @@ For additional informaton on the curl parameters, such as -i or -k, refer to the
 
 ## Postman
 
-All endpoints in Postman require basic authorization. For more information on basic authorization, refer to the [Configuration Tool](xref:ConfigurationTools) section.
+**Note:** All endpoints in Postman require basic authorization. For more information on basic authorization, refer to the [Configuration Tool](xref:ConfigurationTools) section.
 
 To cancel an override using Postman:
 
@@ -34,8 +34,6 @@ To cancel an override using Postman:
 https://<host>:<port>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride
 ```
 
-   
-
 3. In the body of the request, enter the Value as **OFF**.
 
 ```json
@@ -45,5 +43,3 @@ https://<host>:<port>/clientfailover/groups/<groupID>/clientsessions/<sessionID>
 ```
 
 4. Select **Send** to cancel the role override. 
-
- 
