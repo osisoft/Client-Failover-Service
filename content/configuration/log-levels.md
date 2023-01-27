@@ -38,7 +38,7 @@ To change the log level using cURL:
 2. Run a `PUT` command, defining the host and the port number:
 
 ```
-curl --request PUT "https://<host>:<port>/api/v1/configuration/logging" -H "Content-Type: application/json" --data-raw "{ "LogLevel": "Information" }"
+curl -i -k -u <username>:<password> -X PUT "https://<host>:<port>/api/v1/configuration/logging" -H "Content-Type: application/json" --data-raw "{ "LogLevel": "Information" }"
 ```
      
 ### Postman
