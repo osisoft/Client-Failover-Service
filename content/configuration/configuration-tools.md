@@ -16,6 +16,7 @@ Throughout this document, there are command cURL examples that illustrate how to
 
 | Parameter | Description         |
 | --------- | ------------------- |
+| -d        | HTTP Post data  |
 | -H        | Pass custom headers to the server |
 | -i        | Include protocol response headers in the output         |
 | -k        | Allow insecure server connections when using SSL  |
