@@ -23,7 +23,7 @@ Before changing the service's account, perform the following steps on each of th
 5. In the "Permissions for Users" list, check "Read" and "Write" if they are not already selected
 6. Click "OK" twice to close both dialogs
 
-  > **Note:**: if you have configured health endpoints, follow the instructions in the section "Reconfigure Health Endpoints" below.
+  > **Note:** if you have configured health endpoints, follow the instructions in the section "Reconfigure Health Endpoints" below.
 
 After setting folder permissions, perform these steps to change the service account:
 1. Open the "Services" control panel applet
@@ -37,7 +37,7 @@ After setting folder permissions, perform these steps to change the service acco
 ## Reconfigure Health Endpoints
 Use the following procedure to reconfigure the service account if the configuration includes one of the following:
 - Health endpoints that use Basic authentication (Username and Password) while sending data to PI Web API OMF endpoint
-- Health endpoints that uses ClientId or ClientSecret while sending data to the AVEVA Cloud services OMF endpoint
+- Health endpoints that uses ClientId or ClientSecret while sending data to the AVEVA Data Hub OMF endpoint
  
 1. Use the `GET` method in conjunction with the `http://<host>:<port>/api/v1/configuration/healthendpoints` REST endpoint to read the configuration.
 2. Save a copy of the response body from step 1. The Password or ClientSecret values you originally entered will have been replaced with asterisks. In the saved copy, replace the asterisks with the original ones.
