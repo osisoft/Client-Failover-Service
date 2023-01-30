@@ -14,7 +14,7 @@ The Client Failover Service is an application that minimizes data loss by enabli
 
 This service acts as an endpoint that receives and sends failover messages to and from adapters. These messages report on the health of the adapter, help inform the adapter of its role within the failover group, and provides users with the ability to monitor the adapter's health.
 
-This is the intial release. 
+This is the intial release of the Client Failover Service. 
 
 For more information, see the [Client Failover Service overview](xref:index).
 
