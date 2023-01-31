@@ -29,9 +29,11 @@ Complete the following steps to configure health endpoints. Use the `PUT` method
 6. Enter the following cURL command (which uses the `PUT` method) to initialize the health endpoint configuration.
 
 ```
-curl -d "@<json file name>.json" -H "Content-Type: application/json" -X PUT "http://localhost:5590/api/v1/configuration/system/healthendpoints"
+curl -i -k -u <username>:<password> -d "@<json file name>.json" -H "Content-Type: application/json" -X PUT "http://<host>:<port>/api/v1/configuration/system/healthendpoints"
 ```
-    
+
+For additional information on the curl parameters, such as -i or -k, refer to the [Configuration Tool](xref:ConfigurationTools) section.
+
  **Note:** For a list of other REST operations you can perform, like updating or replacing a health endpoints configuration, see [REST URLs](#rest-urls).
 
 ## Health endpoint parameters

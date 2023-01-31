@@ -17,16 +17,20 @@ To delete a group using cURL:
    **Note:** To delete a group, there cannot be any active open sessions within the group.
 
    ```
-   curl --request DELETE "https://<host>:<port>/api/v1/clientfailover/groups/<groupID>"
+   curl -i -k -u <username>:<password> -X DELETE "https://<host>:<port>/api/v1/clientfailover/groups/<groupID>"
    ```
 
+For additional information on the curl parameters, such as -i or -k, refer to the [Configuration Tool](xref:ConfigurationTools) section.
+
 ## Postman
+
+**Note:** All endpoints in Postman require basic authorization. For more information on basic authorization, refer to the [Configuration Tool](xref:ConfigurationTools) section.
 
 To delete a group using Postman:
 
 1. Select **Delete** from the HTTP request drop-down.
 
-2. Using the following link, define the endpoint port and group ID:
+2. Use the following Request URL, defining the endpoint host, port, and group ID:
 
    **Note:** To delete a group, there cannot be any active open sessions within the group.
 
