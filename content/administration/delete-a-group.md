@@ -20,7 +20,7 @@ To delete a group using cURL:
    curl -i -k -u <username>:<password> -X DELETE "https://<host>:<port>/api/v1/clientfailover/groups/<groupID>"
    ```
 
-For additional informaton on the curl parameters, such as -i or -k, refer to the [Configuration Tool](xref:ConfigurationTools) section.
+For additional information on the curl parameters, such as -i or -k, refer to the [Configuration Tool](xref:ConfigurationTools) section.
 
 ## Postman
 
