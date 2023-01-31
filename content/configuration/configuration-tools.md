@@ -33,3 +33,9 @@ All endpoints in Client Failover Service require basic authentication in Postman
 2. In the Edit Collection window, select the **Authorization** tab.
 3. In the TYPE drop-down list, select **Basic Auth**.
 4. Enter your system user name and password.
+
+If you are running the Client Failover Service with the default self-signed SSL certificate, you must disable the "SSL Certificate Verification" option in Postman. To do this, open the request, select the **Settings** tab, and turn the verification setting to **OFF**.
+
+![Enable SSL Certification](../images/enable-ssl-cert.png)
+
+If you have replaced the self-signed SSL certificate with your own CA-signed certificate (see [Certificate Management](xref:CertificateMgmtFailover)), it is recommended that you leave the verification set to **On** for security purposes.
