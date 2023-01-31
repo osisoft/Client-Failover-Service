@@ -2,7 +2,7 @@
 uid: ReleaseNotes
 ---
 
-# Client Failover Service
+# Release Notes
 
 Client Failover Service
 
