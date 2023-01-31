@@ -18,7 +18,7 @@ To perform a role override using cURL:
 curl -i -k -u <username>:<password> -X POST "https://<host>:<port>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride" -H "Content-Type: application/json" --data-raw "{"Value": "Primary"}"
 ```
 
-For additional informaton on the curl parameters, such as -i or -k, refer to the [Configuration Tool](xref:ConfigurationTools) section.
+For additional information on the curl parameters, such as -i or -k, refer to the [Configuration Tool](xref:ConfigurationTools) section.
 
 ## Postman
 
