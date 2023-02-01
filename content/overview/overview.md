@@ -20,6 +20,6 @@ This version of the Client Failover Service only supports Windows Operating Syst
 
 ## Client Failover Service configuration
 
-The Client Failover Service supports minimal configuration options, all of which can be configured using the Admin endpoint.
+The Client Failover Service supports minimal configuration options, all of which can be configured using REST endpoints.
 
 To add adapters to a failover group, you must update the Failover Configuration Facet section in the adapter configuration.
