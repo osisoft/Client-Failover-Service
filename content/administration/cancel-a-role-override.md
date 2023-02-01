@@ -18,11 +18,11 @@ To cancel an override using cURL:
 curl -i -k -u <username>:<password> -X POST "https://<host>:<port>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride" -H "Content-Type: application/json" --data-raw "{"Value": "Off"}"
 ```
 
-For additional information on the curl parameters, such as -i or -k, refer to the [Configuration Tool](xref:ConfigurationTools) section.
+For additional information on the curl parameters, such as -i or -k, refer to the [Configuration Tools](xref:ConfigurationTools) section.
 
 ## Postman
 
-**Note:** All endpoints in Postman require basic authorization. For more information on basic authorization, refer to the [Configuration Tool](xref:ConfigurationTools) section.
+**Note:** All endpoints in Postman require basic authorization. For more information on basic authorization, refer to the [Configuration Tools](xref:ConfigurationTools) section.
 
 To cancel an override using Postman:
 
