@@ -23,7 +23,7 @@ Perform the following steps to view the Client Failover Service logs:
     Reason: Only one client in group.
     ```
 
-2. Optional: [Change the log level](/content/configuration/log-levels.md) of the Client Failover Service to receive more information and context. 
+2. Optional: [Change the log level](xref:LogLevels) of the Client Failover Service to receive more information and context. 
 
 ## Health and diagnostics egress to PI Web API
 
