@@ -16,7 +16,7 @@ This service acts as an endpoint that receives and sends failover messages to an
 
 This is the intial release of the Client Failover Service. 
 
-For more information, see the [Client Failover Service overview](xref:index).
+For more information, see the [Client Failover Service overview](xref:overview).
 
 ## Security information and guidance 
 
