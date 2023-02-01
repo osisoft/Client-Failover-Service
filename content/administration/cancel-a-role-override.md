@@ -30,16 +30,16 @@ To cancel an override using Postman:
 
 2. Use the following Request URL for the session you want to cancel, defining the endpoint host, port, group ID and session ID:
 
-```
-https://<host>:<port>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride
-```
+   ```
+   https://<host>:<port>/clientfailover/groups/<groupID>/clientsessions/<sessionID>/roleoverride
+   ```
 
 3. In the body of the request, enter the Value as **OFF**.
 
-```json
-{
-   "Value": "Off"
-}
-```
+   ```json
+   {
+      "Value": "Off"
+   }
+   ```
 
 4. Select **Send** to cancel the role override. 
