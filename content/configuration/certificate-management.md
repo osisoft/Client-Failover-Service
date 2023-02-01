@@ -10,7 +10,7 @@ The Certificates folder contains a public CRT certificate file and a private KEY
 
 The Certificates folder also contains a folder named Archive. This folder is normally empty, but it may contain copies of certificate and/or key files that are detected as invalid when the service starts. These may be useful when troubleshooting any problems with certificates.
 
-**Note:** The certificate used by Client Failover Service must be trusted by the device running the adapter. If it is not trusted, the [ValidateEndpointCertificate](xref:HealthEndpoints) must be set to false.
+**Note:** The certificate used by Client Failover Service must be trusted by the device running the adapter. If it is not trusted, the ValidateEndpointCertificate property in the adapter’s failover configuration must be set to false.
 
 If the SSL certificate is set to expire within 30 days, the message log receives a warning message. If the SSL certificate has expired, the service logs an error message to the log, but continues to use the certificate.
 
