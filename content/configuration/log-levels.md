@@ -41,11 +41,11 @@ To change the log level using cURL:
 curl -i -k -u <username>:<password> -X PUT "https://<host>:<port>/api/v1/configuration/logging" -H "Content-Type: application/json" --data-raw "{ "LogLevel": "Information" }"
 ```
 
-For additional information on the curl parameters, such as -i or -k, refer to the [Configuration Tool](xref:ConfigurationTools) section.
+For additional information on the curl parameters, such as -i or -k, refer to the [Configuration Tools](xref:ConfigurationTools) section.
 
 ### Postman
 
-**Note:** All endpoints in Postman require basic authorization. For more information on basic authorization, refer to the [Configuration Tool](xref:ConfigurationTools) section.
+**Note:** All endpoints in Postman require basic authorization. For more information on basic authorization, refer to the [Configuration Tools](xref:ConfigurationTools) section.
 
 To change the log level using Postman:
 
