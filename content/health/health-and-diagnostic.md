@@ -4,7 +4,7 @@ uid: HealthAndDiagnosticsFailover
 
 # Health and Diagnostics
 
-The Client Failover Service produces various types of health data. You can use health data to ensure that your Client Failover Service is running properly. For more information on available Client Failover Service health data, see [health](xref:ClientFailoverHealth).
+The Client Failover Service produces various types of health data. You can use health data to ensure that your Client Failover Service is running properly. For more information on available Client Failover Service health data, see [Health](xref:ClientFailoverHealth).
 
 The Client Failover Service also produces diagnostic data which lives alongside the health data. You can use diagnostic data to find more information about a particular Client Failover Service instance. 
 
