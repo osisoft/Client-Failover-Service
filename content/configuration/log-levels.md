@@ -53,16 +53,16 @@ To change the log level using Postman:
 
 2. Enter the following for the Request URL, defining the host and the port number:
 
-```
-https://<host>:<port>/api/v1/configuration/logging
-```
+   ```
+   https://<host>:<port>/api/v1/configuration/logging
+   ```
 
 3. In the body of the request, enter the following and change the level to the desired value:
 
-```json
-{
-    "LogLevel": "Information"
-}
-```
+   ```json
+   {
+       "LogLevel": "Information"
+   }
+   ```
 
 4. Select **SEND** to change the log level. 
