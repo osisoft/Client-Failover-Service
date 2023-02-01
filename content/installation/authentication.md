@@ -3,9 +3,10 @@ uid: AuthenticationFailover
 ---
 
 # Authentication
-The Client Failover Service supports the following authentication methods for PI Adapter clients and REST tools.
 
 ## Authentication Methods
+
+The Client Failover Service supports the following authentication methods for PI Adapter clients and REST tools.
 
 ### Kerberos
 
