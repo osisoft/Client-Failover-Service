@@ -32,7 +32,7 @@ Complete the following steps to configure health endpoints. Use the `PUT` method
 curl -i -k -u <username>:<password> -d "@<json file name>.json" -H "Content-Type: application/json" -X PUT "http://<host>:<port>/api/v1/configuration/system/healthendpoints"
 ```
 
-For additional information on the curl parameters, such as -i or -k, refer to the [Configuration Tool](xref:ConfigurationTools) section.
+For additional information on the curl parameters, such as -i or -k, refer to the [Configuration Tools](xref:ConfigurationTools) section.
 
  **Note:** For a list of other REST operations you can perform, like updating or replacing a health endpoints configuration, see [REST URLs](#rest-urls).
 
@@ -46,8 +46,8 @@ The following parameters are available for configuring health endpoints:
 | Endpoint                    | Required                            | `string`    | The URL of the OMF endpoint to receive this health data. <br><br>Allowed value: well-formed http or https endpoint string<br>Default: `null`|
 | Username                    | Required for PI Web API endpoints   | `string`    | The username used to authenticate with a PI Web API OMF endpoint. <br><br>_PI server:_<br>Allowed value: any string<br>Default: `null`|
 | Password                    | Required for PI Web API endpoints   | `string`    | The password used to authenticate with a PI Web API OMF endpoint. <br><br>_PI server:_<br>Allowed value: any string<br>Default: `null`|
-| ClientId                    | Required for AVEVA Data Hub endpoints          | `string`    | The client ID used for authentication with an AVEVA Cloud Services OMF endpoint. <br><br>Allowed value: any string<br>Default: `null` |
-| ClientSecret                | Required for AVEVA Data Hub endpoints          | `string`    | The client secret used for authentication with an AVEVA Cloud Services OMF endpoint. <br><br>Allowed value: any string<br>Default: `null`|
+| ClientId                    | Required for AVEVA Data Hub endpoints          | `string`    | The client ID used for authentication with an AVEVA Data Hub OMF endpoint. <br><br>Allowed value: any string<br>Default: `null` |
+| ClientSecret                | Required for AVEVA Data Hub endpoints          | `string`    | The client secret used for authentication with an AVEVA Data Hub OMF endpoint. <br><br>Allowed value: any string<br>Default: `null`|
 | TokenEndpoint | Optional for AVEVA Data Hub endpoints | `string` | Retrieves an AVEVA Data Hub token from an alternative endpoint. <br><br>Allowed value: well-formed http or https endpoint string <br>Default value: `null` |
 | ValidateEndpointCertificate | Optional | `boolean`      | Disables verification of destination security certificate. Use for testing only with self-signed certificates; AVEVA recommends keeping this set to the default, true, in production environments. <br><br>Allowed value: `true` or `false`<br>Default value: `true`|
 
