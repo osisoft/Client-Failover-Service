@@ -4,7 +4,10 @@ uid: PerformARoleOverride
 
 # Perform a role override
 
-Administrators can force a secondary session to be the primary session by performing a role override using the POST method using one of the following REST tools: cURL or Postman. The secondary session can be set as primary for a defined amount of time or can be set as the primary indefinitely.
+Administrators can forcefully promote an adapter in the secondary role to the primary role by performing a role override. You can do this using the
+POST method with one of the following REST tools: cURL or Postman. 
+
+The secondary adapter can be set as primary adapter for a defined amount of time or it can be set as the primary indefinitely. This option is particularly useful for maintenance periods when an individual adapter is on a machine that may be restarting often.
 
 ## cURL
 
@@ -42,8 +45,15 @@ To perform a role override using Postman:
        "ExpirationPeriod": "08:00:00"
    }
    ```
+   
+   | Parameter            | Required      | Type          | Description                     |
+   |----------------------|---------------|---------------|---------------------------------|
+   | Value                | Required      | String        | Set to ‘Primary’ to promote the adapter to the Primary role. Set to ‘Secondary’ to demote to the secondary role. Set to ‘Off’ to remove the role override. |
+   | ExpirationPeriod     | Optional      | String in HH:MM:SS format | Enforces the role override for a timed period. If no ExpirationPeriod is set, then the role override will be indefinitely enforced. |
+   
    **Note:** The forced primary session reverts to the default automatic mode by the failover endpoint when the time defined in the ExpirationPeriod expires.
 
 4. Select **SEND** to complete the override. 
 
    **Note:** When heartbeats are not received during a period longer than the Failover Timeout and the session becomes stale, the session will still remain in primary role while the role override is in effect.
+   
