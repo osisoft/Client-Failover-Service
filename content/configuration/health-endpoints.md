@@ -10,7 +10,7 @@ You can configure Client Failover Service to produce and store health data at a 
 
 A health endpoint designates an OMF endpoint where adapter health information is sent. You can configure multiple health endpoints.
 
-Complete the following steps to configure health endpoints. Use the `PUT` method in conjunction with the `http://<host>:<port>/api/v1/configuration/healthendpoints` REST endpoint to initialize the configuration.
+Complete the following steps to configure health endpoints. Use the `PUT` method in conjunction with the `https://<host>:<port>/api/v1/configuration/healthendpoints` REST endpoint to initialize the configuration.
 
 1. Using a text editor, create an empty text file.
 
@@ -29,7 +29,7 @@ Complete the following steps to configure health endpoints. Use the `PUT` method
 6. Enter the following cURL command (which uses the `PUT` method) to initialize the health endpoint configuration.
 
 ```
-curl -i -k -u <username>:<password> -d "@<json file name>.json" -H "Content-Type: application/json" -X PUT "http://<host>:<port>/api/v1/configuration/system/healthendpoints"
+curl -i -k -u <username>:<password> -d "@<json file name>.json" -H "Content-Type: application/json" -X PUT "https://<host>:<port>/api/v1/configuration/healthendpoints"
 ```
 
 For additional information on the curl parameters, such as -i or -k, refer to the [Configuration Tools](xref:ConfigurationTools) section.
