@@ -8,4 +8,4 @@ With the failover service administration level functions, you can can change log
 
 The examples in the administration topics use cURL, a commonly available tool on Windows as well as Postman, a REST tool for systems with GUI components. You can use the same operations with any programming language or tool that supports making REST calls.
 
-For more information on PI adapter configuration tools, see [Configuration tools](xref:ConfigurationTools).
+For more information on AVEVA adapter configuration tools, see [Configuration tools](xref:ConfigurationTools).
