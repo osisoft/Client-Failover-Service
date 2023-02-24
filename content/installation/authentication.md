@@ -6,11 +6,11 @@ uid: AuthenticationFailover
 
 ## Authentication Methods
 
-The Client Failover Service supports the following authentication methods for PI Adapter clients and REST tools.
+The Client Failover Service supports the following authentication methods for AVEVA Adapter clients and REST tools.
 
 ### Kerberos
 
-Kerberos provides per-user security that is native to Windows and Active Directory, and is supported with PI Adapters and some REST clients. Kerberos does not rely on credentials being transmitted across the wire, which makes it ideal for use with untrusted connections.
+Kerberos provides per-user security that is native to Windows and Active Directory, and is supported with AVEVA Adapters and some REST clients. Kerberos does not rely on credentials being transmitted across the wire, which makes it ideal for use with untrusted connections.
 
 If the Client Failover Service is running with the default identity of "NT SERVICE\AVEVAFailover", it is not necessary to configure Service Principal Names (SPNs) on the machine where the service is running.  However, if the service identity is changed to a domain user account, the following SPNs must be configured and associated with that domain account:
 
@@ -24,7 +24,7 @@ If the Client Failover Service is running with the default identity of "NT SERVI
 ### Basic
 
 Basic authentication is defined in the Request for Comments document [RFC 2617 HTTP Authentication](https://www.ietf.org/rfc/rfc2617.txt)
-and is supported by PI Adapters and most REST clients (e.g., cURL and Postman). Basic authentication as implemented in the Client Failover Service
+and is supported by AVEVA Adapters and most REST clients (e.g., cURL and Postman). Basic authentication as implemented in the Client Failover Service
 is simple to use, provides granular, per-user security based on Windows identity, and can help avoid configuration problems related to Kerberos. 
 When combined with SSL, as in all Client Failover Service requests, Basic authentication is reasonably secure.
 
