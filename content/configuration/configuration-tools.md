@@ -23,7 +23,7 @@ Throughout this document, there are command cURL examples that illustrate how to
 
 ## Postman
 
-Postman is a REST tool for systems with GUI components. PI adapters are supported on platforms without GUIs. Postman is particularly useful for learning more about PI Adapter REST APIs. For more information, see the [Postman documentation](https://www.postman.com/).
+Postman is a REST tool for systems with GUI components. AVEVA adapters are supported on platforms without GUIs. Postman is particularly useful for learning more about AVEVA Adapter REST APIs. For more information, see the [Postman documentation](https://www.postman.com/).
 
 All endpoints in Client Failover Service require basic authentication in Postman to send a verified username and password with your request. Use the following steps to designate your authentication details in Postman: 
 
