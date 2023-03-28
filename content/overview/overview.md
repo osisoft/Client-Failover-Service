@@ -12,7 +12,7 @@ If a primary adapter stops reporting its own health and status to the Client Fai
 
 The Client Failover Service supports cold, warm, and hot failover modes.
 
-**Note:** Only the 1.4 version of OPC UA and the 1.3 version of MQTT currently supports the Client Failover Service. 
+**Note:** Only the 1.4 version of OPC UA and the 1.3 version of MQTT currently support the Client Failover Service. 
 
 ## Client Failover Service installation
 
